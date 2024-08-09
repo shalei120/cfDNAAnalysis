@@ -1,0 +1,1923 @@
+{'test': None, 'createDataset': True, 'playDataset': 10, 'reset': True, 'device': '8', 'rootDir': './Artifacts/', 'retrain_model': 'No', 'maxLength': 1000, 'vocabularySize': 40000, 'vq_embedding_dim': 150, 'vq_n_embeddings': 512, 'vq_beta': 0.25, 'headnum': 4, 'hiddenSize': 1000, 'numLayers': 2, 'initEmbeddings': True, 'embeddingSize': 128, 'capsuleSize': 50, 'numEpochs': 400, 'saveEvery': 2000, 'batchSize': 64, 'learningRate': 0.001, 'dropout': 0.3, 'clip': 5.0, 'encunit': 'lstm', 'decunit': 'lstm', 'enc_numlayer': 2, 'dec_numlayer': 2, 'maxLengthEnco': 1000, 'maxLengthDeco': 1001, 'temperature': 1.0, 'classify_type': 'multi', 'task': 'charge', 'scheduler': 'multistep', 'lr_decay': 0.97, 'patience': 5, 'threshold': 0.0001, 'cooldown': 0, 'min_lr': 5e-05, 'milestones': [25, 50, 75]}
+efef
+here
+Data loaded from binary file.
+/home/siweideng/OxTium_cfDNA
+tensor([[ 0., 12.,  3.,  ...,  0.,  0.,  0.],
+        [ 0., 11.,  4.,  ...,  0.,  0.,  0.],
+        [ 0., 11.,  2.,  ...,  0.,  0.,  0.],
+        ...,
+        [ 0., 18.,  0.,  ...,  0.,  0.,  0.],
+        [ 0., 13.,  7.,  ...,  0.,  0.,  0.],
+        [ 0., 15.,  0.,  ...,  0.,  0.,  0.]])
+[1 0 1 0 0 1 0 0 0 1 0 0 1 1 0 0 1 0 0 1 1 0 0 0 0 1 0 0 1 1 1 0 1 0 0 1 1
+ 0 1 0 0 0 1 1 0 0 0 0 0 1 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 1 0 1
+ 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+ 0 1 0 1 0 0 0 1 1 1 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 1 0
+ 0 1 1 1 0 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0
+ 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 1 0 1 1 1 1 0 0 1 0 0 1 0 0 0 0 0 1 0 0
+ 0 0 0 0 1 0 0 0 1 0 1 0 1 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 1 0 1
+ 0 1 0 0 1 0 1 0 1 1 0 0 0 1]
+tensor([[ 0., 12.,  4.,  ...,  0.,  0.,  0.],
+        [ 0., 12.,  0.,  ...,  0.,  0.,  0.],
+        [ 0., 12.,  2.,  ...,  0.,  0.,  0.],
+        ...,
+        [ 0.,  4.,  0.,  ...,  0.,  0.,  0.],
+        [ 0., 10.,  2.,  ...,  0.,  0.,  0.],
+        [ 0.,  9.,  7.,  ...,  0.,  0.,  0.]])
+[0 0 0 0 1 0 0 1 0 1 1 0 0 0 0 1 0 0 0 1 1 1 0 1 0 0 1 1 0 0 0 0 0 1 0 1 0
+ 0 0 1 0 1 0 1 1 1 1 0 0 0 0 1 0 1 0 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 0 1 1
+ 0 0 1 0 1 1 1 0 0 1 1 0 1 1 1 1 1 1 1 1 0 0 1 1 0 0 0 0 0 0 0 1 0 0 1 0 0
+ 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 1 1 0 0 0 0 1 0 1 0 0 1 1 1 1 0 0 0 0 0 0 0
+ 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 1 0 1 1 1 0 0 1 0 0 0 0 0 0 1]
+torch.Size([309953]) 182
+9 6
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+Model creation...
+Glorot init
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 000 | Epoch: 000 | Batch: 000 | Loss: 4.63130
+Estimator: 001 | Epoch: 000 | Batch: 000 | Loss: 4.62283
+Estimator: 002 | Epoch: 000 | Batch: 000 | Loss: 4.63694
+Estimator: 003 | Epoch: 000 | Batch: 000 | Loss: 4.62997
+Estimator: 004 | Epoch: 000 | Batch: 000 | Loss: 4.62992
+Estimator: 005 | Epoch: 000 | Batch: 000 | Loss: 4.63017
+Estimator: 006 | Epoch: 000 | Batch: 000 | Loss: 4.63954
+Estimator: 000 | Epoch: 001 | Batch: 000 | Loss: 0.93810
+Estimator: 001 | Epoch: 001 | Batch: 000 | Loss: 1.02744
+Estimator: 002 | Epoch: 001 | Batch: 000 | Loss: 0.97006
+Estimator: 003 | Epoch: 001 | Batch: 000 | Loss: 1.04653
+Estimator: 004 | Epoch: 001 | Batch: 000 | Loss: 1.04827
+Estimator: 005 | Epoch: 001 | Batch: 000 | Loss: 1.08485
+Estimator: 006 | Epoch: 001 | Batch: 000 | Loss: 1.13161
+Estimator: 000 | Epoch: 002 | Batch: 000 | Loss: 0.69528
+Estimator: 001 | Epoch: 002 | Batch: 000 | Loss: 0.69346
+Estimator: 002 | Epoch: 002 | Batch: 000 | Loss: 0.72654
+Estimator: 003 | Epoch: 002 | Batch: 000 | Loss: 0.72710
+Estimator: 004 | Epoch: 002 | Batch: 000 | Loss: 0.73477
+Estimator: 005 | Epoch: 002 | Batch: 000 | Loss: 0.70132
+Estimator: 006 | Epoch: 002 | Batch: 000 | Loss: 0.71573
+Estimator: 000 | Epoch: 003 | Batch: 000 | Loss: 0.56414
+Estimator: 001 | Epoch: 003 | Batch: 000 | Loss: 0.56814
+Estimator: 002 | Epoch: 003 | Batch: 000 | Loss: 0.50767
+Estimator: 003 | Epoch: 003 | Batch: 000 | Loss: 0.58147
+Estimator: 004 | Epoch: 003 | Batch: 000 | Loss: 0.56792
+Estimator: 005 | Epoch: 003 | Batch: 000 | Loss: 0.57686
+Estimator: 006 | Epoch: 003 | Batch: 000 | Loss: 0.60472
+Estimator: 000 | Epoch: 004 | Batch: 000 | Loss: 0.44169
+Estimator: 001 | Epoch: 004 | Batch: 000 | Loss: 0.48727
+Estimator: 002 | Epoch: 004 | Batch: 000 | Loss: 0.48893
+Estimator: 003 | Epoch: 004 | Batch: 000 | Loss: 0.49171
+Estimator: 004 | Epoch: 004 | Batch: 000 | Loss: 0.47052
+Estimator: 005 | Epoch: 004 | Batch: 000 | Loss: 0.48570
+Estimator: 006 | Epoch: 004 | Batch: 000 | Loss: 0.51539
+Estimator: 000 | Epoch: 005 | Batch: 000 | Loss: 0.38026
+Estimator: 001 | Epoch: 005 | Batch: 000 | Loss: 0.43241
+Estimator: 002 | Epoch: 005 | Batch: 000 | Loss: 0.40494
+Estimator: 003 | Epoch: 005 | Batch: 000 | Loss: 0.44100
+Estimator: 004 | Epoch: 005 | Batch: 000 | Loss: 0.43221
+Estimator: 005 | Epoch: 005 | Batch: 000 | Loss: 0.42284
+Estimator: 006 | Epoch: 005 | Batch: 000 | Loss: 0.43652
+Estimator: 000 | Epoch: 006 | Batch: 000 | Loss: 0.40287
+Estimator: 001 | Epoch: 006 | Batch: 000 | Loss: 0.39705
+Estimator: 002 | Epoch: 006 | Batch: 000 | Loss: 0.39603
+Estimator: 003 | Epoch: 006 | Batch: 000 | Loss: 0.45210
+Estimator: 004 | Epoch: 006 | Batch: 000 | Loss: 0.40439
+Estimator: 005 | Epoch: 006 | Batch: 000 | Loss: 0.41209
+Estimator: 006 | Epoch: 006 | Batch: 000 | Loss: 0.40568
+Estimator: 000 | Epoch: 007 | Batch: 000 | Loss: 0.41936
+Estimator: 001 | Epoch: 007 | Batch: 000 | Loss: 0.35623
+Estimator: 002 | Epoch: 007 | Batch: 000 | Loss: 0.39274
+Estimator: 003 | Epoch: 007 | Batch: 000 | Loss: 0.41985
+Estimator: 004 | Epoch: 007 | Batch: 000 | Loss: 0.40610
+Estimator: 005 | Epoch: 007 | Batch: 000 | Loss: 0.40835
+Estimator: 006 | Epoch: 007 | Batch: 000 | Loss: 0.44174
+Estimator: 000 | Epoch: 008 | Batch: 000 | Loss: 0.43607
+Estimator: 001 | Epoch: 008 | Batch: 000 | Loss: 0.44041
+Estimator: 002 | Epoch: 008 | Batch: 000 | Loss: 0.36586
+Estimator: 003 | Epoch: 008 | Batch: 000 | Loss: 0.39272
+Estimator: 004 | Epoch: 008 | Batch: 000 | Loss: 0.40749
+Estimator: 005 | Epoch: 008 | Batch: 000 | Loss: 0.39566
+Estimator: 006 | Epoch: 008 | Batch: 000 | Loss: 0.36659
+Estimator: 000 | Epoch: 009 | Batch: 000 | Loss: 0.43299
+Estimator: 001 | Epoch: 009 | Batch: 000 | Loss: 0.45929
+Estimator: 002 | Epoch: 009 | Batch: 000 | Loss: 0.38682
+Estimator: 003 | Epoch: 009 | Batch: 000 | Loss: 0.41561
+Estimator: 004 | Epoch: 009 | Batch: 000 | Loss: 0.38149
+Estimator: 005 | Epoch: 009 | Batch: 000 | Loss: 0.41301
+Estimator: 006 | Epoch: 009 | Batch: 000 | Loss: 0.37456
+Estimator: 000 | Epoch: 010 | Batch: 000 | Loss: 0.41901
+Estimator: 001 | Epoch: 010 | Batch: 000 | Loss: 0.39372
+Estimator: 002 | Epoch: 010 | Batch: 000 | Loss: 0.44162
+Estimator: 003 | Epoch: 010 | Batch: 000 | Loss: 0.35466
+Estimator: 004 | Epoch: 010 | Batch: 000 | Loss: 0.38612
+Estimator: 005 | Epoch: 010 | Batch: 000 | Loss: 0.40582
+Estimator: 006 | Epoch: 010 | Batch: 000 | Loss: 0.38290
+Estimator: 000 | Epoch: 011 | Batch: 000 | Loss: 0.45234
+Estimator: 001 | Epoch: 011 | Batch: 000 | Loss: 0.41505
+Estimator: 002 | Epoch: 011 | Batch: 000 | Loss: 0.44725
+Estimator: 003 | Epoch: 011 | Batch: 000 | Loss: 0.42742
+Estimator: 004 | Epoch: 011 | Batch: 000 | Loss: 0.41730
+Estimator: 005 | Epoch: 011 | Batch: 000 | Loss: 0.39755
+Estimator: 006 | Epoch: 011 | Batch: 000 | Loss: 0.43466
+Estimator: 000 | Epoch: 012 | Batch: 000 | Loss: 0.40480
+Estimator: 001 | Epoch: 012 | Batch: 000 | Loss: 0.35726
+Estimator: 002 | Epoch: 012 | Batch: 000 | Loss: 0.53697
+Estimator: 003 | Epoch: 012 | Batch: 000 | Loss: 0.46443
+Estimator: 004 | Epoch: 012 | Batch: 000 | Loss: 0.40738
+Estimator: 005 | Epoch: 012 | Batch: 000 | Loss: 0.40886
+Estimator: 006 | Epoch: 012 | Batch: 000 | Loss: 0.43114
+Estimator: 000 | Epoch: 013 | Batch: 000 | Loss: 0.38011
+Estimator: 001 | Epoch: 013 | Batch: 000 | Loss: 0.40687
+Estimator: 002 | Epoch: 013 | Batch: 000 | Loss: 0.41784
+Estimator: 003 | Epoch: 013 | Batch: 000 | Loss: 0.42886
+Estimator: 004 | Epoch: 013 | Batch: 000 | Loss: 0.44097
+Estimator: 005 | Epoch: 013 | Batch: 000 | Loss: 0.44542
+Estimator: 006 | Epoch: 013 | Batch: 000 | Loss: 0.38855
+Estimator: 000 | Epoch: 014 | Batch: 000 | Loss: 0.40042
+Estimator: 001 | Epoch: 014 | Batch: 000 | Loss: 0.44586
+Estimator: 002 | Epoch: 014 | Batch: 000 | Loss: 0.41909
+Estimator: 003 | Epoch: 014 | Batch: 000 | Loss: 0.42600
+Estimator: 004 | Epoch: 014 | Batch: 000 | Loss: 0.41631
+Estimator: 005 | Epoch: 014 | Batch: 000 | Loss: 0.41596
+Estimator: 006 | Epoch: 014 | Batch: 000 | Loss: 0.41714
+Estimator: 000 | Epoch: 015 | Batch: 000 | Loss: 0.45710
+Estimator: 001 | Epoch: 015 | Batch: 000 | Loss: 0.38545
+Estimator: 002 | Epoch: 015 | Batch: 000 | Loss: 0.38814
+Estimator: 003 | Epoch: 015 | Batch: 000 | Loss: 0.39214
+Estimator: 004 | Epoch: 015 | Batch: 000 | Loss: 0.43774
+Estimator: 005 | Epoch: 015 | Batch: 000 | Loss: 0.37056
+Estimator: 006 | Epoch: 015 | Batch: 000 | Loss: 0.45555
+Estimator: 000 | Epoch: 016 | Batch: 000 | Loss: 0.43301
+Estimator: 001 | Epoch: 016 | Batch: 000 | Loss: 0.42600
+Estimator: 002 | Epoch: 016 | Batch: 000 | Loss: 0.43006
+Estimator: 003 | Epoch: 016 | Batch: 000 | Loss: 0.44902
+Estimator: 004 | Epoch: 016 | Batch: 000 | Loss: 0.38807
+Estimator: 005 | Epoch: 016 | Batch: 000 | Loss: 0.40646
+Estimator: 006 | Epoch: 016 | Batch: 000 | Loss: 0.37408
+Estimator: 000 | Epoch: 017 | Batch: 000 | Loss: 0.48211
+Estimator: 001 | Epoch: 017 | Batch: 000 | Loss: 0.39609
+Estimator: 002 | Epoch: 017 | Batch: 000 | Loss: 0.42655
+Estimator: 003 | Epoch: 017 | Batch: 000 | Loss: 0.41062
+Estimator: 004 | Epoch: 017 | Batch: 000 | Loss: 0.47835
+Estimator: 005 | Epoch: 017 | Batch: 000 | Loss: 0.44451
+Estimator: 006 | Epoch: 017 | Batch: 000 | Loss: 0.39531
+Estimator: 000 | Epoch: 018 | Batch: 000 | Loss: 0.39947
+Estimator: 001 | Epoch: 018 | Batch: 000 | Loss: 0.37278
+Estimator: 002 | Epoch: 018 | Batch: 000 | Loss: 0.48362
+Estimator: 003 | Epoch: 018 | Batch: 000 | Loss: 0.36518
+Estimator: 004 | Epoch: 018 | Batch: 000 | Loss: 0.36773
+Estimator: 005 | Epoch: 018 | Batch: 000 | Loss: 0.42253
+Estimator: 006 | Epoch: 018 | Batch: 000 | Loss: 0.41264
+Estimator: 000 | Epoch: 019 | Batch: 000 | Loss: 0.42688
+Estimator: 001 | Epoch: 019 | Batch: 000 | Loss: 0.45078
+Estimator: 002 | Epoch: 019 | Batch: 000 | Loss: 0.37909
+Estimator: 003 | Epoch: 019 | Batch: 000 | Loss: 0.44832
+Estimator: 004 | Epoch: 019 | Batch: 000 | Loss: 0.45203
+Estimator: 005 | Epoch: 019 | Batch: 000 | Loss: 0.40468
+Estimator: 006 | Epoch: 019 | Batch: 000 | Loss: 0.43315
+Estimator: 000 | Epoch: 020 | Batch: 000 | Loss: 0.45042
+Estimator: 001 | Epoch: 020 | Batch: 000 | Loss: 0.45949
+Estimator: 002 | Epoch: 020 | Batch: 000 | Loss: 0.43304
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 003 | Epoch: 020 | Batch: 000 | Loss: 0.40897
+Estimator: 004 | Epoch: 020 | Batch: 000 | Loss: 0.42274
+Estimator: 005 | Epoch: 020 | Batch: 000 | Loss: 0.37212
+Estimator: 006 | Epoch: 020 | Batch: 000 | Loss: 0.39008
+Estimator: 000 | Epoch: 021 | Batch: 000 | Loss: 0.38298
+Estimator: 001 | Epoch: 021 | Batch: 000 | Loss: 0.42343
+Estimator: 002 | Epoch: 021 | Batch: 000 | Loss: 0.44846
+Estimator: 003 | Epoch: 021 | Batch: 000 | Loss: 0.45138
+Estimator: 004 | Epoch: 021 | Batch: 000 | Loss: 0.43041
+Estimator: 005 | Epoch: 021 | Batch: 000 | Loss: 0.46297
+Estimator: 006 | Epoch: 021 | Batch: 000 | Loss: 0.41869
+Estimator: 000 | Epoch: 022 | Batch: 000 | Loss: 0.44149
+Estimator: 001 | Epoch: 022 | Batch: 000 | Loss: 0.43671
+Estimator: 002 | Epoch: 022 | Batch: 000 | Loss: 0.43415
+Estimator: 003 | Epoch: 022 | Batch: 000 | Loss: 0.39933
+Estimator: 004 | Epoch: 022 | Batch: 000 | Loss: 0.43574
+Estimator: 005 | Epoch: 022 | Batch: 000 | Loss: 0.39844
+Estimator: 006 | Epoch: 022 | Batch: 000 | Loss: 0.36984
+Estimator: 000 | Epoch: 023 | Batch: 000 | Loss: 0.47411
+Estimator: 001 | Epoch: 023 | Batch: 000 | Loss: 0.43344
+Estimator: 002 | Epoch: 023 | Batch: 000 | Loss: 0.41082
+Estimator: 003 | Epoch: 023 | Batch: 000 | Loss: 0.41221
+Estimator: 004 | Epoch: 023 | Batch: 000 | Loss: 0.41029
+Estimator: 005 | Epoch: 023 | Batch: 000 | Loss: 0.38709
+Estimator: 006 | Epoch: 023 | Batch: 000 | Loss: 0.47796
+Estimator: 000 | Epoch: 024 | Batch: 000 | Loss: 0.43250
+Estimator: 001 | Epoch: 024 | Batch: 000 | Loss: 0.39122
+Estimator: 002 | Epoch: 024 | Batch: 000 | Loss: 0.39584
+Estimator: 003 | Epoch: 024 | Batch: 000 | Loss: 0.45589
+Estimator: 004 | Epoch: 024 | Batch: 000 | Loss: 0.37449
+Estimator: 005 | Epoch: 024 | Batch: 000 | Loss: 0.46521
+Estimator: 006 | Epoch: 024 | Batch: 000 | Loss: 0.42333
+Estimator: 000 | Epoch: 025 | Batch: 000 | Loss: 0.48378
+Estimator: 001 | Epoch: 025 | Batch: 000 | Loss: 0.42390
+Estimator: 002 | Epoch: 025 | Batch: 000 | Loss: 0.40543
+Estimator: 003 | Epoch: 025 | Batch: 000 | Loss: 0.50056
+Estimator: 004 | Epoch: 025 | Batch: 000 | Loss: 0.46188
+Estimator: 005 | Epoch: 025 | Batch: 000 | Loss: 0.41053
+Estimator: 006 | Epoch: 025 | Batch: 000 | Loss: 0.42674
+Estimator: 000 | Epoch: 026 | Batch: 000 | Loss: 0.39474
+Estimator: 001 | Epoch: 026 | Batch: 000 | Loss: 0.43001
+Estimator: 002 | Epoch: 026 | Batch: 000 | Loss: 0.41335
+Estimator: 003 | Epoch: 026 | Batch: 000 | Loss: 0.43028
+Estimator: 004 | Epoch: 026 | Batch: 000 | Loss: 0.46759
+Estimator: 005 | Epoch: 026 | Batch: 000 | Loss: 0.35615
+Estimator: 006 | Epoch: 026 | Batch: 000 | Loss: 0.38140
+Estimator: 000 | Epoch: 027 | Batch: 000 | Loss: 0.37539
+Estimator: 001 | Epoch: 027 | Batch: 000 | Loss: 0.40436
+Estimator: 002 | Epoch: 027 | Batch: 000 | Loss: 0.45168
+Estimator: 003 | Epoch: 027 | Batch: 000 | Loss: 0.48393
+Estimator: 004 | Epoch: 027 | Batch: 000 | Loss: 0.46391
+Estimator: 005 | Epoch: 027 | Batch: 000 | Loss: 0.46121
+Estimator: 006 | Epoch: 027 | Batch: 000 | Loss: 0.43581
+Estimator: 000 | Epoch: 028 | Batch: 000 | Loss: 0.39427
+Estimator: 001 | Epoch: 028 | Batch: 000 | Loss: 0.44551
+Estimator: 002 | Epoch: 028 | Batch: 000 | Loss: 0.44908
+Estimator: 003 | Epoch: 028 | Batch: 000 | Loss: 0.44022
+Estimator: 004 | Epoch: 028 | Batch: 000 | Loss: 0.39952
+Estimator: 005 | Epoch: 028 | Batch: 000 | Loss: 0.48576
+Estimator: 006 | Epoch: 028 | Batch: 000 | Loss: 0.40814
+Estimator: 000 | Epoch: 029 | Batch: 000 | Loss: 0.47312
+Estimator: 001 | Epoch: 029 | Batch: 000 | Loss: 0.49897
+Estimator: 002 | Epoch: 029 | Batch: 000 | Loss: 0.44442
+Estimator: 003 | Epoch: 029 | Batch: 000 | Loss: 0.41322
+Estimator: 004 | Epoch: 029 | Batch: 000 | Loss: 0.48136
+Estimator: 005 | Epoch: 029 | Batch: 000 | Loss: 0.40953
+Estimator: 006 | Epoch: 029 | Batch: 000 | Loss: 0.42558
+Estimator: 000 | Epoch: 030 | Batch: 000 | Loss: 0.42150
+Estimator: 001 | Epoch: 030 | Batch: 000 | Loss: 0.43491
+Estimator: 002 | Epoch: 030 | Batch: 000 | Loss: 0.49614
+Estimator: 003 | Epoch: 030 | Batch: 000 | Loss: 0.45274
+Estimator: 004 | Epoch: 030 | Batch: 000 | Loss: 0.44578
+Estimator: 005 | Epoch: 030 | Batch: 000 | Loss: 0.49532
+Estimator: 006 | Epoch: 030 | Batch: 000 | Loss: 0.45039
+Estimator: 000 | Epoch: 031 | Batch: 000 | Loss: 0.46330
+Estimator: 001 | Epoch: 031 | Batch: 000 | Loss: 0.42591
+Estimator: 002 | Epoch: 031 | Batch: 000 | Loss: 0.39973
+Estimator: 003 | Epoch: 031 | Batch: 000 | Loss: 0.47143
+Estimator: 004 | Epoch: 031 | Batch: 000 | Loss: 0.43738
+Estimator: 005 | Epoch: 031 | Batch: 000 | Loss: 0.43822
+Estimator: 006 | Epoch: 031 | Batch: 000 | Loss: 0.43421
+Estimator: 000 | Epoch: 032 | Batch: 000 | Loss: 0.42014
+Estimator: 001 | Epoch: 032 | Batch: 000 | Loss: 0.38745
+Estimator: 002 | Epoch: 032 | Batch: 000 | Loss: 0.43417
+Estimator: 003 | Epoch: 032 | Batch: 000 | Loss: 0.46644
+Estimator: 004 | Epoch: 032 | Batch: 000 | Loss: 0.42014
+Estimator: 005 | Epoch: 032 | Batch: 000 | Loss: 0.43313
+Estimator: 006 | Epoch: 032 | Batch: 000 | Loss: 0.47458
+Estimator: 000 | Epoch: 033 | Batch: 000 | Loss: 0.47521
+Estimator: 001 | Epoch: 033 | Batch: 000 | Loss: 0.44037
+Estimator: 002 | Epoch: 033 | Batch: 000 | Loss: 0.49997
+Estimator: 003 | Epoch: 033 | Batch: 000 | Loss: 0.47304
+Estimator: 004 | Epoch: 033 | Batch: 000 | Loss: 0.42112
+Estimator: 005 | Epoch: 033 | Batch: 000 | Loss: 0.43017
+Estimator: 006 | Epoch: 033 | Batch: 000 | Loss: 0.47870
+Estimator: 000 | Epoch: 034 | Batch: 000 | Loss: 0.52327
+Estimator: 001 | Epoch: 034 | Batch: 000 | Loss: 0.39069
+Estimator: 002 | Epoch: 034 | Batch: 000 | Loss: 0.42996
+Estimator: 003 | Epoch: 034 | Batch: 000 | Loss: 0.41800
+Estimator: 004 | Epoch: 034 | Batch: 000 | Loss: 0.42026
+Estimator: 005 | Epoch: 034 | Batch: 000 | Loss: 0.41283
+Estimator: 006 | Epoch: 034 | Batch: 000 | Loss: 0.49068
+Estimator: 000 | Epoch: 035 | Batch: 000 | Loss: 0.47329
+Estimator: 001 | Epoch: 035 | Batch: 000 | Loss: 0.45154
+Estimator: 002 | Epoch: 035 | Batch: 000 | Loss: 0.37059
+Estimator: 003 | Epoch: 035 | Batch: 000 | Loss: 0.42326
+Estimator: 004 | Epoch: 035 | Batch: 000 | Loss: 0.49293
+Estimator: 005 | Epoch: 035 | Batch: 000 | Loss: 0.42172
+Estimator: 006 | Epoch: 035 | Batch: 000 | Loss: 0.50482
+Estimator: 000 | Epoch: 036 | Batch: 000 | Loss: 0.48210
+Estimator: 001 | Epoch: 036 | Batch: 000 | Loss: 0.42517
+Estimator: 002 | Epoch: 036 | Batch: 000 | Loss: 0.41869
+Estimator: 003 | Epoch: 036 | Batch: 000 | Loss: 0.40818
+Estimator: 004 | Epoch: 036 | Batch: 000 | Loss: 0.42734
+Estimator: 005 | Epoch: 036 | Batch: 000 | Loss: 0.42762
+Estimator: 006 | Epoch: 036 | Batch: 000 | Loss: 0.41589
+Estimator: 000 | Epoch: 037 | Batch: 000 | Loss: 0.45666
+Estimator: 001 | Epoch: 037 | Batch: 000 | Loss: 0.35610
+Estimator: 002 | Epoch: 037 | Batch: 000 | Loss: 0.40957
+Estimator: 003 | Epoch: 037 | Batch: 000 | Loss: 0.44420
+Estimator: 004 | Epoch: 037 | Batch: 000 | Loss: 0.48448
+Estimator: 005 | Epoch: 037 | Batch: 000 | Loss: 0.41352
+Estimator: 006 | Epoch: 037 | Batch: 000 | Loss: 0.44545
+Estimator: 000 | Epoch: 038 | Batch: 000 | Loss: 0.47125
+Estimator: 001 | Epoch: 038 | Batch: 000 | Loss: 0.43589
+Estimator: 002 | Epoch: 038 | Batch: 000 | Loss: 0.47371
+Estimator: 003 | Epoch: 038 | Batch: 000 | Loss: 0.42640
+Estimator: 004 | Epoch: 038 | Batch: 000 | Loss: 0.40863
+Estimator: 005 | Epoch: 038 | Batch: 000 | Loss: 0.42478
+Estimator: 006 | Epoch: 038 | Batch: 000 | Loss: 0.44642
+Estimator: 000 | Epoch: 039 | Batch: 000 | Loss: 0.39400
+Estimator: 001 | Epoch: 039 | Batch: 000 | Loss: 0.43187
+Estimator: 002 | Epoch: 039 | Batch: 000 | Loss: 0.44174
+Estimator: 003 | Epoch: 039 | Batch: 000 | Loss: 0.43329
+Estimator: 004 | Epoch: 039 | Batch: 000 | Loss: 0.39632
+Estimator: 005 | Epoch: 039 | Batch: 000 | Loss: 0.43934
+Estimator: 006 | Epoch: 039 | Batch: 000 | Loss: 0.39032
+Estimator: 000 | Epoch: 040 | Batch: 000 | Loss: 0.46788
+Estimator: 001 | Epoch: 040 | Batch: 000 | Loss: 0.44238
+Estimator: 002 | Epoch: 040 | Batch: 000 | Loss: 0.38210
+Estimator: 003 | Epoch: 040 | Batch: 000 | Loss: 0.43748
+Estimator: 004 | Epoch: 040 | Batch: 000 | Loss: 0.40695
+Estimator: 005 | Epoch: 040 | Batch: 000 | Loss: 0.42513
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 006 | Epoch: 040 | Batch: 000 | Loss: 0.47378
+Estimator: 000 | Epoch: 041 | Batch: 000 | Loss: 0.43313
+Estimator: 001 | Epoch: 041 | Batch: 000 | Loss: 0.40547
+Estimator: 002 | Epoch: 041 | Batch: 000 | Loss: 0.46360
+Estimator: 003 | Epoch: 041 | Batch: 000 | Loss: 0.46094
+Estimator: 004 | Epoch: 041 | Batch: 000 | Loss: 0.37716
+Estimator: 005 | Epoch: 041 | Batch: 000 | Loss: 0.45929
+Estimator: 006 | Epoch: 041 | Batch: 000 | Loss: 0.37960
+Estimator: 000 | Epoch: 042 | Batch: 000 | Loss: 0.44464
+Estimator: 001 | Epoch: 042 | Batch: 000 | Loss: 0.55237
+Estimator: 002 | Epoch: 042 | Batch: 000 | Loss: 0.43357
+Estimator: 003 | Epoch: 042 | Batch: 000 | Loss: 0.43802
+Estimator: 004 | Epoch: 042 | Batch: 000 | Loss: 0.45628
+Estimator: 005 | Epoch: 042 | Batch: 000 | Loss: 0.45479
+Estimator: 006 | Epoch: 042 | Batch: 000 | Loss: 0.41034
+Estimator: 000 | Epoch: 043 | Batch: 000 | Loss: 0.47900
+Estimator: 001 | Epoch: 043 | Batch: 000 | Loss: 0.41294
+Estimator: 002 | Epoch: 043 | Batch: 000 | Loss: 0.46280
+Estimator: 003 | Epoch: 043 | Batch: 000 | Loss: 0.43143
+Estimator: 004 | Epoch: 043 | Batch: 000 | Loss: 0.45955
+Estimator: 005 | Epoch: 043 | Batch: 000 | Loss: 0.45232
+Estimator: 006 | Epoch: 043 | Batch: 000 | Loss: 0.41051
+Estimator: 000 | Epoch: 044 | Batch: 000 | Loss: 0.49352
+Estimator: 001 | Epoch: 044 | Batch: 000 | Loss: 0.46702
+Estimator: 002 | Epoch: 044 | Batch: 000 | Loss: 0.49518
+Estimator: 003 | Epoch: 044 | Batch: 000 | Loss: 0.44984
+Estimator: 004 | Epoch: 044 | Batch: 000 | Loss: 0.41149
+Estimator: 005 | Epoch: 044 | Batch: 000 | Loss: 0.52368
+Estimator: 006 | Epoch: 044 | Batch: 000 | Loss: 0.41259
+Estimator: 000 | Epoch: 045 | Batch: 000 | Loss: 0.46408
+Estimator: 001 | Epoch: 045 | Batch: 000 | Loss: 0.37833
+Estimator: 002 | Epoch: 045 | Batch: 000 | Loss: 0.44054
+Estimator: 003 | Epoch: 045 | Batch: 000 | Loss: 0.44818
+Estimator: 004 | Epoch: 045 | Batch: 000 | Loss: 0.38102
+Estimator: 005 | Epoch: 045 | Batch: 000 | Loss: 0.49967
+Estimator: 006 | Epoch: 045 | Batch: 000 | Loss: 0.40345
+Estimator: 000 | Epoch: 046 | Batch: 000 | Loss: 0.41603
+Estimator: 001 | Epoch: 046 | Batch: 000 | Loss: 0.42843
+Estimator: 002 | Epoch: 046 | Batch: 000 | Loss: 0.50535
+Estimator: 003 | Epoch: 046 | Batch: 000 | Loss: 0.47650
+Estimator: 004 | Epoch: 046 | Batch: 000 | Loss: 0.40815
+Estimator: 005 | Epoch: 046 | Batch: 000 | Loss: 0.43108
+Estimator: 006 | Epoch: 046 | Batch: 000 | Loss: 0.47101
+Estimator: 000 | Epoch: 047 | Batch: 000 | Loss: 0.43291
+Estimator: 001 | Epoch: 047 | Batch: 000 | Loss: 0.41985
+Estimator: 002 | Epoch: 047 | Batch: 000 | Loss: 0.37134
+Estimator: 003 | Epoch: 047 | Batch: 000 | Loss: 0.49031
+Estimator: 004 | Epoch: 047 | Batch: 000 | Loss: 0.35843
+Estimator: 005 | Epoch: 047 | Batch: 000 | Loss: 0.41460
+Estimator: 006 | Epoch: 047 | Batch: 000 | Loss: 0.44582
+Estimator: 000 | Epoch: 048 | Batch: 000 | Loss: 0.41969
+Estimator: 001 | Epoch: 048 | Batch: 000 | Loss: 0.42500
+Estimator: 002 | Epoch: 048 | Batch: 000 | Loss: 0.43158
+Estimator: 003 | Epoch: 048 | Batch: 000 | Loss: 0.48378
+Estimator: 004 | Epoch: 048 | Batch: 000 | Loss: 0.45912
+Estimator: 005 | Epoch: 048 | Batch: 000 | Loss: 0.38656
+Estimator: 006 | Epoch: 048 | Batch: 000 | Loss: 0.44549
+Estimator: 000 | Epoch: 049 | Batch: 000 | Loss: 0.43716
+Estimator: 001 | Epoch: 049 | Batch: 000 | Loss: 0.42985
+Estimator: 002 | Epoch: 049 | Batch: 000 | Loss: 0.50844
+Estimator: 003 | Epoch: 049 | Batch: 000 | Loss: 0.44013
+Estimator: 004 | Epoch: 049 | Batch: 000 | Loss: 0.39051
+Estimator: 005 | Epoch: 049 | Batch: 000 | Loss: 0.34968
+Estimator: 006 | Epoch: 049 | Batch: 000 | Loss: 0.44793
+Estimator: 000 | Epoch: 050 | Batch: 000 | Loss: 0.46906
+Estimator: 001 | Epoch: 050 | Batch: 000 | Loss: 0.44198
+Estimator: 002 | Epoch: 050 | Batch: 000 | Loss: 0.43834
+Estimator: 003 | Epoch: 050 | Batch: 000 | Loss: 0.49127
+Estimator: 004 | Epoch: 050 | Batch: 000 | Loss: 0.48140
+Estimator: 005 | Epoch: 050 | Batch: 000 | Loss: 0.39737
+Estimator: 006 | Epoch: 050 | Batch: 000 | Loss: 0.46368
+Estimator: 000 | Epoch: 051 | Batch: 000 | Loss: 0.37982
+Estimator: 001 | Epoch: 051 | Batch: 000 | Loss: 0.49766
+Estimator: 002 | Epoch: 051 | Batch: 000 | Loss: 0.39400
+Estimator: 003 | Epoch: 051 | Batch: 000 | Loss: 0.53322
+Estimator: 004 | Epoch: 051 | Batch: 000 | Loss: 0.49322
+Estimator: 005 | Epoch: 051 | Batch: 000 | Loss: 0.43739
+Estimator: 006 | Epoch: 051 | Batch: 000 | Loss: 0.48846
+Estimator: 000 | Epoch: 052 | Batch: 000 | Loss: 0.47885
+Estimator: 001 | Epoch: 052 | Batch: 000 | Loss: 0.38656
+Estimator: 002 | Epoch: 052 | Batch: 000 | Loss: 0.49760
+Estimator: 003 | Epoch: 052 | Batch: 000 | Loss: 0.49304
+Estimator: 004 | Epoch: 052 | Batch: 000 | Loss: 0.41112
+Estimator: 005 | Epoch: 052 | Batch: 000 | Loss: 0.42506
+Estimator: 006 | Epoch: 052 | Batch: 000 | Loss: 0.41502
+Estimator: 000 | Epoch: 053 | Batch: 000 | Loss: 0.40985
+Estimator: 001 | Epoch: 053 | Batch: 000 | Loss: 0.46402
+Estimator: 002 | Epoch: 053 | Batch: 000 | Loss: 0.47744
+Estimator: 003 | Epoch: 053 | Batch: 000 | Loss: 0.49985
+Estimator: 004 | Epoch: 053 | Batch: 000 | Loss: 0.54191
+Estimator: 005 | Epoch: 053 | Batch: 000 | Loss: 0.48586
+Estimator: 006 | Epoch: 053 | Batch: 000 | Loss: 0.41880
+Estimator: 000 | Epoch: 054 | Batch: 000 | Loss: 0.40549
+Estimator: 001 | Epoch: 054 | Batch: 000 | Loss: 0.42016
+Estimator: 002 | Epoch: 054 | Batch: 000 | Loss: 0.44695
+Estimator: 003 | Epoch: 054 | Batch: 000 | Loss: 0.43874
+Estimator: 004 | Epoch: 054 | Batch: 000 | Loss: 0.42880
+Estimator: 005 | Epoch: 054 | Batch: 000 | Loss: 0.41772
+Estimator: 006 | Epoch: 054 | Batch: 000 | Loss: 0.43633
+Estimator: 000 | Epoch: 055 | Batch: 000 | Loss: 0.44292
+Estimator: 001 | Epoch: 055 | Batch: 000 | Loss: 0.46795
+Estimator: 002 | Epoch: 055 | Batch: 000 | Loss: 0.46190
+Estimator: 003 | Epoch: 055 | Batch: 000 | Loss: 0.43710
+Estimator: 004 | Epoch: 055 | Batch: 000 | Loss: 0.47884
+Estimator: 005 | Epoch: 055 | Batch: 000 | Loss: 0.44379
+Estimator: 006 | Epoch: 055 | Batch: 000 | Loss: 0.45154
+Estimator: 000 | Epoch: 056 | Batch: 000 | Loss: 0.43227
+Estimator: 001 | Epoch: 056 | Batch: 000 | Loss: 0.44096
+Estimator: 002 | Epoch: 056 | Batch: 000 | Loss: 0.44029
+Estimator: 003 | Epoch: 056 | Batch: 000 | Loss: 0.42457
+Estimator: 004 | Epoch: 056 | Batch: 000 | Loss: 0.42936
+Estimator: 005 | Epoch: 056 | Batch: 000 | Loss: 0.46322
+Estimator: 006 | Epoch: 056 | Batch: 000 | Loss: 0.48790
+Estimator: 000 | Epoch: 057 | Batch: 000 | Loss: 0.42562
+Estimator: 001 | Epoch: 057 | Batch: 000 | Loss: 0.46765
+Estimator: 002 | Epoch: 057 | Batch: 000 | Loss: 0.46725
+Estimator: 003 | Epoch: 057 | Batch: 000 | Loss: 0.38396
+Estimator: 004 | Epoch: 057 | Batch: 000 | Loss: 0.47539
+Estimator: 005 | Epoch: 057 | Batch: 000 | Loss: 0.48575
+Estimator: 006 | Epoch: 057 | Batch: 000 | Loss: 0.42661
+Estimator: 000 | Epoch: 058 | Batch: 000 | Loss: 0.48086
+Estimator: 001 | Epoch: 058 | Batch: 000 | Loss: 0.45086
+Estimator: 002 | Epoch: 058 | Batch: 000 | Loss: 0.37173
+Estimator: 003 | Epoch: 058 | Batch: 000 | Loss: 0.43161
+Estimator: 004 | Epoch: 058 | Batch: 000 | Loss: 0.36402
+Estimator: 005 | Epoch: 058 | Batch: 000 | Loss: 0.44560
+Estimator: 006 | Epoch: 058 | Batch: 000 | Loss: 0.42089
+Estimator: 000 | Epoch: 059 | Batch: 000 | Loss: 0.41575
+Estimator: 001 | Epoch: 059 | Batch: 000 | Loss: 0.40514
+Estimator: 002 | Epoch: 059 | Batch: 000 | Loss: 0.45617
+Estimator: 003 | Epoch: 059 | Batch: 000 | Loss: 0.42555
+Estimator: 004 | Epoch: 059 | Batch: 000 | Loss: 0.51209
+Estimator: 005 | Epoch: 059 | Batch: 000 | Loss: 0.47661
+Estimator: 006 | Epoch: 059 | Batch: 000 | Loss: 0.49348
+Estimator: 000 | Epoch: 060 | Batch: 000 | Loss: 0.47483
+Estimator: 001 | Epoch: 060 | Batch: 000 | Loss: 0.36416
+Estimator: 002 | Epoch: 060 | Batch: 000 | Loss: 0.37507
+Estimator: 003 | Epoch: 060 | Batch: 000 | Loss: 0.38953
+Estimator: 004 | Epoch: 060 | Batch: 000 | Loss: 0.42599
+Estimator: 005 | Epoch: 060 | Batch: 000 | Loss: 0.37217
+Estimator: 006 | Epoch: 060 | Batch: 000 | Loss: 0.48857
+Estimator: 000 | Epoch: 061 | Batch: 000 | Loss: 0.50868
+Estimator: 001 | Epoch: 061 | Batch: 000 | Loss: 0.47984
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 002 | Epoch: 061 | Batch: 000 | Loss: 0.45924
+Estimator: 003 | Epoch: 061 | Batch: 000 | Loss: 0.53556
+Estimator: 004 | Epoch: 061 | Batch: 000 | Loss: 0.42551
+Estimator: 005 | Epoch: 061 | Batch: 000 | Loss: 0.44296
+Estimator: 006 | Epoch: 061 | Batch: 000 | Loss: 0.52389
+Estimator: 000 | Epoch: 062 | Batch: 000 | Loss: 0.39933
+Estimator: 001 | Epoch: 062 | Batch: 000 | Loss: 0.44585
+Estimator: 002 | Epoch: 062 | Batch: 000 | Loss: 0.37344
+Estimator: 003 | Epoch: 062 | Batch: 000 | Loss: 0.40419
+Estimator: 004 | Epoch: 062 | Batch: 000 | Loss: 0.40373
+Estimator: 005 | Epoch: 062 | Batch: 000 | Loss: 0.43927
+Estimator: 006 | Epoch: 062 | Batch: 000 | Loss: 0.38057
+Estimator: 000 | Epoch: 063 | Batch: 000 | Loss: 0.43069
+Estimator: 001 | Epoch: 063 | Batch: 000 | Loss: 0.47115
+Estimator: 002 | Epoch: 063 | Batch: 000 | Loss: 0.44871
+Estimator: 003 | Epoch: 063 | Batch: 000 | Loss: 0.42741
+Estimator: 004 | Epoch: 063 | Batch: 000 | Loss: 0.47926
+Estimator: 005 | Epoch: 063 | Batch: 000 | Loss: 0.48904
+Estimator: 006 | Epoch: 063 | Batch: 000 | Loss: 0.44578
+Estimator: 000 | Epoch: 064 | Batch: 000 | Loss: 0.42496
+Estimator: 001 | Epoch: 064 | Batch: 000 | Loss: 0.46811
+Estimator: 002 | Epoch: 064 | Batch: 000 | Loss: 0.34234
+Estimator: 003 | Epoch: 064 | Batch: 000 | Loss: 0.50315
+Estimator: 004 | Epoch: 064 | Batch: 000 | Loss: 0.44290
+Estimator: 005 | Epoch: 064 | Batch: 000 | Loss: 0.42312
+Estimator: 006 | Epoch: 064 | Batch: 000 | Loss: 0.53415
+Estimator: 000 | Epoch: 065 | Batch: 000 | Loss: 0.48497
+Estimator: 001 | Epoch: 065 | Batch: 000 | Loss: 0.44215
+Estimator: 002 | Epoch: 065 | Batch: 000 | Loss: 0.47076
+Estimator: 003 | Epoch: 065 | Batch: 000 | Loss: 0.47318
+Estimator: 004 | Epoch: 065 | Batch: 000 | Loss: 0.51532
+Estimator: 005 | Epoch: 065 | Batch: 000 | Loss: 0.42384
+Estimator: 006 | Epoch: 065 | Batch: 000 | Loss: 0.42940
+Estimator: 000 | Epoch: 066 | Batch: 000 | Loss: 0.45916
+Estimator: 001 | Epoch: 066 | Batch: 000 | Loss: 0.49216
+Estimator: 002 | Epoch: 066 | Batch: 000 | Loss: 0.51095
+Estimator: 003 | Epoch: 066 | Batch: 000 | Loss: 0.41843
+Estimator: 004 | Epoch: 066 | Batch: 000 | Loss: 0.38933
+Estimator: 005 | Epoch: 066 | Batch: 000 | Loss: 0.47985
+Estimator: 006 | Epoch: 066 | Batch: 000 | Loss: 0.47171
+Estimator: 000 | Epoch: 067 | Batch: 000 | Loss: 0.47087
+Estimator: 001 | Epoch: 067 | Batch: 000 | Loss: 0.38516
+Estimator: 002 | Epoch: 067 | Batch: 000 | Loss: 0.48214
+Estimator: 003 | Epoch: 067 | Batch: 000 | Loss: 0.40222
+Estimator: 004 | Epoch: 067 | Batch: 000 | Loss: 0.43534
+Estimator: 005 | Epoch: 067 | Batch: 000 | Loss: 0.42689
+Estimator: 006 | Epoch: 067 | Batch: 000 | Loss: 0.47796
+Estimator: 000 | Epoch: 068 | Batch: 000 | Loss: 0.46978
+Estimator: 001 | Epoch: 068 | Batch: 000 | Loss: 0.42556
+Estimator: 002 | Epoch: 068 | Batch: 000 | Loss: 0.39792
+Estimator: 003 | Epoch: 068 | Batch: 000 | Loss: 0.38301
+Estimator: 004 | Epoch: 068 | Batch: 000 | Loss: 0.44767
+Estimator: 005 | Epoch: 068 | Batch: 000 | Loss: 0.39766
+Estimator: 006 | Epoch: 068 | Batch: 000 | Loss: 0.39707
+Estimator: 000 | Epoch: 069 | Batch: 000 | Loss: 0.47041
+Estimator: 001 | Epoch: 069 | Batch: 000 | Loss: 0.39723
+Estimator: 002 | Epoch: 069 | Batch: 000 | Loss: 0.49873
+Estimator: 003 | Epoch: 069 | Batch: 000 | Loss: 0.46389
+Estimator: 004 | Epoch: 069 | Batch: 000 | Loss: 0.43358
+Estimator: 005 | Epoch: 069 | Batch: 000 | Loss: 0.39102
+Estimator: 006 | Epoch: 069 | Batch: 000 | Loss: 0.41505
+Estimator: 000 | Epoch: 070 | Batch: 000 | Loss: 0.43608
+Estimator: 001 | Epoch: 070 | Batch: 000 | Loss: 0.45110
+Estimator: 002 | Epoch: 070 | Batch: 000 | Loss: 0.36071
+Estimator: 003 | Epoch: 070 | Batch: 000 | Loss: 0.44194
+Estimator: 004 | Epoch: 070 | Batch: 000 | Loss: 0.43029
+Estimator: 005 | Epoch: 070 | Batch: 000 | Loss: 0.39566
+Estimator: 006 | Epoch: 070 | Batch: 000 | Loss: 0.48341
+Estimator: 000 | Epoch: 071 | Batch: 000 | Loss: 0.50077
+Estimator: 001 | Epoch: 071 | Batch: 000 | Loss: 0.49528
+Estimator: 002 | Epoch: 071 | Batch: 000 | Loss: 0.43674
+Estimator: 003 | Epoch: 071 | Batch: 000 | Loss: 0.46128
+Estimator: 004 | Epoch: 071 | Batch: 000 | Loss: 0.40489
+Estimator: 005 | Epoch: 071 | Batch: 000 | Loss: 0.37074
+Estimator: 006 | Epoch: 071 | Batch: 000 | Loss: 0.44494
+Estimator: 000 | Epoch: 072 | Batch: 000 | Loss: 0.41055
+Estimator: 001 | Epoch: 072 | Batch: 000 | Loss: 0.40726
+Estimator: 002 | Epoch: 072 | Batch: 000 | Loss: 0.48673
+Estimator: 003 | Epoch: 072 | Batch: 000 | Loss: 0.44708
+Estimator: 004 | Epoch: 072 | Batch: 000 | Loss: 0.39606
+Estimator: 005 | Epoch: 072 | Batch: 000 | Loss: 0.48416
+Estimator: 006 | Epoch: 072 | Batch: 000 | Loss: 0.47459
+Estimator: 000 | Epoch: 073 | Batch: 000 | Loss: 0.42545
+Estimator: 001 | Epoch: 073 | Batch: 000 | Loss: 0.49088
+Estimator: 002 | Epoch: 073 | Batch: 000 | Loss: 0.35594
+Estimator: 003 | Epoch: 073 | Batch: 000 | Loss: 0.42634
+Estimator: 004 | Epoch: 073 | Batch: 000 | Loss: 0.45368
+Estimator: 005 | Epoch: 073 | Batch: 000 | Loss: 0.46215
+Estimator: 006 | Epoch: 073 | Batch: 000 | Loss: 0.47415
+Estimator: 000 | Epoch: 074 | Batch: 000 | Loss: 0.39128
+Estimator: 001 | Epoch: 074 | Batch: 000 | Loss: 0.46057
+Estimator: 002 | Epoch: 074 | Batch: 000 | Loss: 0.40896
+Estimator: 003 | Epoch: 074 | Batch: 000 | Loss: 0.39733
+Estimator: 004 | Epoch: 074 | Batch: 000 | Loss: 0.38957
+Estimator: 005 | Epoch: 074 | Batch: 000 | Loss: 0.39045
+Estimator: 006 | Epoch: 074 | Batch: 000 | Loss: 0.53188
+Estimator: 000 | Epoch: 075 | Batch: 000 | Loss: 0.46546
+Estimator: 001 | Epoch: 075 | Batch: 000 | Loss: 0.40954
+Estimator: 002 | Epoch: 075 | Batch: 000 | Loss: 0.45502
+Estimator: 003 | Epoch: 075 | Batch: 000 | Loss: 0.43265
+Estimator: 004 | Epoch: 075 | Batch: 000 | Loss: 0.40237
+Estimator: 005 | Epoch: 075 | Batch: 000 | Loss: 0.51216
+Estimator: 006 | Epoch: 075 | Batch: 000 | Loss: 0.44032
+Estimator: 000 | Epoch: 076 | Batch: 000 | Loss: 0.40041
+Estimator: 001 | Epoch: 076 | Batch: 000 | Loss: 0.40939
+Estimator: 002 | Epoch: 076 | Batch: 000 | Loss: 0.37260
+Estimator: 003 | Epoch: 076 | Batch: 000 | Loss: 0.42416
+Estimator: 004 | Epoch: 076 | Batch: 000 | Loss: 0.39665
+Estimator: 005 | Epoch: 076 | Batch: 000 | Loss: 0.41980
+Estimator: 006 | Epoch: 076 | Batch: 000 | Loss: 0.40986
+Estimator: 000 | Epoch: 077 | Batch: 000 | Loss: 0.39523
+Estimator: 001 | Epoch: 077 | Batch: 000 | Loss: 0.47117
+Estimator: 002 | Epoch: 077 | Batch: 000 | Loss: 0.46019
+Estimator: 003 | Epoch: 077 | Batch: 000 | Loss: 0.49366
+Estimator: 004 | Epoch: 077 | Batch: 000 | Loss: 0.37166
+Estimator: 005 | Epoch: 077 | Batch: 000 | Loss: 0.51308
+Estimator: 006 | Epoch: 077 | Batch: 000 | Loss: 0.43330
+Estimator: 000 | Epoch: 078 | Batch: 000 | Loss: 0.46461
+Estimator: 001 | Epoch: 078 | Batch: 000 | Loss: 0.44663
+Estimator: 002 | Epoch: 078 | Batch: 000 | Loss: 0.44298
+Estimator: 003 | Epoch: 078 | Batch: 000 | Loss: 0.48743
+Estimator: 004 | Epoch: 078 | Batch: 000 | Loss: 0.41407
+Estimator: 005 | Epoch: 078 | Batch: 000 | Loss: 0.42686
+Estimator: 006 | Epoch: 078 | Batch: 000 | Loss: 0.41550
+Estimator: 000 | Epoch: 079 | Batch: 000 | Loss: 0.43914
+Estimator: 001 | Epoch: 079 | Batch: 000 | Loss: 0.45480
+Estimator: 002 | Epoch: 079 | Batch: 000 | Loss: 0.44628
+Estimator: 003 | Epoch: 079 | Batch: 000 | Loss: 0.42566
+Estimator: 004 | Epoch: 079 | Batch: 000 | Loss: 0.44639
+Estimator: 005 | Epoch: 079 | Batch: 000 | Loss: 0.40770
+Estimator: 006 | Epoch: 079 | Batch: 000 | Loss: 0.43422
+Estimator: 000 | Epoch: 080 | Batch: 000 | Loss: 0.45000
+Estimator: 001 | Epoch: 080 | Batch: 000 | Loss: 0.44329
+Estimator: 002 | Epoch: 080 | Batch: 000 | Loss: 0.45804
+Estimator: 003 | Epoch: 080 | Batch: 000 | Loss: 0.49371
+Estimator: 004 | Epoch: 080 | Batch: 000 | Loss: 0.53453
+Estimator: 005 | Epoch: 080 | Batch: 000 | Loss: 0.40802
+Estimator: 006 | Epoch: 080 | Batch: 000 | Loss: 0.45965
+Estimator: 000 | Epoch: 081 | Batch: 000 | Loss: 0.42796
+Estimator: 001 | Epoch: 081 | Batch: 000 | Loss: 0.40468
+Estimator: 002 | Epoch: 081 | Batch: 000 | Loss: 0.34899
+Estimator: 003 | Epoch: 081 | Batch: 000 | Loss: 0.49068
+Estimator: 004 | Epoch: 081 | Batch: 000 | Loss: 0.41871
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 005 | Epoch: 081 | Batch: 000 | Loss: 0.45991
+Estimator: 006 | Epoch: 081 | Batch: 000 | Loss: 0.44881
+Estimator: 000 | Epoch: 082 | Batch: 000 | Loss: 0.46958
+Estimator: 001 | Epoch: 082 | Batch: 000 | Loss: 0.43015
+Estimator: 002 | Epoch: 082 | Batch: 000 | Loss: 0.42491
+Estimator: 003 | Epoch: 082 | Batch: 000 | Loss: 0.51153
+Estimator: 004 | Epoch: 082 | Batch: 000 | Loss: 0.44237
+Estimator: 005 | Epoch: 082 | Batch: 000 | Loss: 0.50047
+Estimator: 006 | Epoch: 082 | Batch: 000 | Loss: 0.37612
+Estimator: 000 | Epoch: 083 | Batch: 000 | Loss: 0.37325
+Estimator: 001 | Epoch: 083 | Batch: 000 | Loss: 0.52640
+Estimator: 002 | Epoch: 083 | Batch: 000 | Loss: 0.43202
+Estimator: 003 | Epoch: 083 | Batch: 000 | Loss: 0.48753
+Estimator: 004 | Epoch: 083 | Batch: 000 | Loss: 0.43245
+Estimator: 005 | Epoch: 083 | Batch: 000 | Loss: 0.43740
+Estimator: 006 | Epoch: 083 | Batch: 000 | Loss: 0.51312
+Estimator: 000 | Epoch: 084 | Batch: 000 | Loss: 0.41468
+Estimator: 001 | Epoch: 084 | Batch: 000 | Loss: 0.41056
+Estimator: 002 | Epoch: 084 | Batch: 000 | Loss: 0.45878
+Estimator: 003 | Epoch: 084 | Batch: 000 | Loss: 0.46051
+Estimator: 004 | Epoch: 084 | Batch: 000 | Loss: 0.42744
+Estimator: 005 | Epoch: 084 | Batch: 000 | Loss: 0.47387
+Estimator: 006 | Epoch: 084 | Batch: 000 | Loss: 0.43136
+Estimator: 000 | Epoch: 085 | Batch: 000 | Loss: 0.40722
+Estimator: 001 | Epoch: 085 | Batch: 000 | Loss: 0.47337
+Estimator: 002 | Epoch: 085 | Batch: 000 | Loss: 0.38776
+Estimator: 003 | Epoch: 085 | Batch: 000 | Loss: 0.44674
+Estimator: 004 | Epoch: 085 | Batch: 000 | Loss: 0.38878
+Estimator: 005 | Epoch: 085 | Batch: 000 | Loss: 0.45571
+Estimator: 006 | Epoch: 085 | Batch: 000 | Loss: 0.45875
+Estimator: 000 | Epoch: 086 | Batch: 000 | Loss: 0.41228
+Estimator: 001 | Epoch: 086 | Batch: 000 | Loss: 0.40588
+Estimator: 002 | Epoch: 086 | Batch: 000 | Loss: 0.41751
+Estimator: 003 | Epoch: 086 | Batch: 000 | Loss: 0.56370
+Estimator: 004 | Epoch: 086 | Batch: 000 | Loss: 0.37749
+Estimator: 005 | Epoch: 086 | Batch: 000 | Loss: 0.48113
+Estimator: 006 | Epoch: 086 | Batch: 000 | Loss: 0.47485
+Estimator: 000 | Epoch: 087 | Batch: 000 | Loss: 0.44846
+Estimator: 001 | Epoch: 087 | Batch: 000 | Loss: 0.37206
+Estimator: 002 | Epoch: 087 | Batch: 000 | Loss: 0.42936
+Estimator: 003 | Epoch: 087 | Batch: 000 | Loss: 0.42020
+Estimator: 004 | Epoch: 087 | Batch: 000 | Loss: 0.48538
+Estimator: 005 | Epoch: 087 | Batch: 000 | Loss: 0.42665
+Estimator: 006 | Epoch: 087 | Batch: 000 | Loss: 0.37503
+Estimator: 000 | Epoch: 088 | Batch: 000 | Loss: 0.37585
+Estimator: 001 | Epoch: 088 | Batch: 000 | Loss: 0.41824
+Estimator: 002 | Epoch: 088 | Batch: 000 | Loss: 0.44900
+Estimator: 003 | Epoch: 088 | Batch: 000 | Loss: 0.40874
+Estimator: 004 | Epoch: 088 | Batch: 000 | Loss: 0.45958
+Estimator: 005 | Epoch: 088 | Batch: 000 | Loss: 0.47752
+Estimator: 006 | Epoch: 088 | Batch: 000 | Loss: 0.43163
+Estimator: 000 | Epoch: 089 | Batch: 000 | Loss: 0.44249
+Estimator: 001 | Epoch: 089 | Batch: 000 | Loss: 0.45409
+Estimator: 002 | Epoch: 089 | Batch: 000 | Loss: 0.42752
+Estimator: 003 | Epoch: 089 | Batch: 000 | Loss: 0.44691
+Estimator: 004 | Epoch: 089 | Batch: 000 | Loss: 0.46021
+Estimator: 005 | Epoch: 089 | Batch: 000 | Loss: 0.44788
+Estimator: 006 | Epoch: 089 | Batch: 000 | Loss: 0.48871
+Estimator: 000 | Epoch: 090 | Batch: 000 | Loss: 0.49567
+Estimator: 001 | Epoch: 090 | Batch: 000 | Loss: 0.45264
+Estimator: 002 | Epoch: 090 | Batch: 000 | Loss: 0.44635
+Estimator: 003 | Epoch: 090 | Batch: 000 | Loss: 0.41936
+Estimator: 004 | Epoch: 090 | Batch: 000 | Loss: 0.48783
+Estimator: 005 | Epoch: 090 | Batch: 000 | Loss: 0.44182
+Estimator: 006 | Epoch: 090 | Batch: 000 | Loss: 0.47154
+Estimator: 000 | Epoch: 091 | Batch: 000 | Loss: 0.42744
+Estimator: 001 | Epoch: 091 | Batch: 000 | Loss: 0.41646
+Estimator: 002 | Epoch: 091 | Batch: 000 | Loss: 0.52811
+Estimator: 003 | Epoch: 091 | Batch: 000 | Loss: 0.34992
+Estimator: 004 | Epoch: 091 | Batch: 000 | Loss: 0.45492
+Estimator: 005 | Epoch: 091 | Batch: 000 | Loss: 0.40548
+Estimator: 006 | Epoch: 091 | Batch: 000 | Loss: 0.44385
+Estimator: 000 | Epoch: 092 | Batch: 000 | Loss: 0.46757
+Estimator: 001 | Epoch: 092 | Batch: 000 | Loss: 0.45326
+Estimator: 002 | Epoch: 092 | Batch: 000 | Loss: 0.45629
+Estimator: 003 | Epoch: 092 | Batch: 000 | Loss: 0.39473
+Estimator: 004 | Epoch: 092 | Batch: 000 | Loss: 0.48148
+Estimator: 005 | Epoch: 092 | Batch: 000 | Loss: 0.48849
+Estimator: 006 | Epoch: 092 | Batch: 000 | Loss: 0.38417
+Estimator: 000 | Epoch: 093 | Batch: 000 | Loss: 0.45312
+Estimator: 001 | Epoch: 093 | Batch: 000 | Loss: 0.43852
+Estimator: 002 | Epoch: 093 | Batch: 000 | Loss: 0.42210
+Estimator: 003 | Epoch: 093 | Batch: 000 | Loss: 0.37455
+Estimator: 004 | Epoch: 093 | Batch: 000 | Loss: 0.40063
+Estimator: 005 | Epoch: 093 | Batch: 000 | Loss: 0.41316
+Estimator: 006 | Epoch: 093 | Batch: 000 | Loss: 0.37489
+Estimator: 000 | Epoch: 094 | Batch: 000 | Loss: 0.45991
+Estimator: 001 | Epoch: 094 | Batch: 000 | Loss: 0.50122
+Estimator: 002 | Epoch: 094 | Batch: 000 | Loss: 0.37431
+Estimator: 003 | Epoch: 094 | Batch: 000 | Loss: 0.42600
+Estimator: 004 | Epoch: 094 | Batch: 000 | Loss: 0.39449
+Estimator: 005 | Epoch: 094 | Batch: 000 | Loss: 0.41218
+Estimator: 006 | Epoch: 094 | Batch: 000 | Loss: 0.50521
+Estimator: 000 | Epoch: 095 | Batch: 000 | Loss: 0.40059
+Estimator: 001 | Epoch: 095 | Batch: 000 | Loss: 0.38967
+Estimator: 002 | Epoch: 095 | Batch: 000 | Loss: 0.49658
+Estimator: 003 | Epoch: 095 | Batch: 000 | Loss: 0.35668
+Estimator: 004 | Epoch: 095 | Batch: 000 | Loss: 0.46603
+Estimator: 005 | Epoch: 095 | Batch: 000 | Loss: 0.42088
+Estimator: 006 | Epoch: 095 | Batch: 000 | Loss: 0.44041
+Estimator: 000 | Epoch: 096 | Batch: 000 | Loss: 0.47080
+Estimator: 001 | Epoch: 096 | Batch: 000 | Loss: 0.50124
+Estimator: 002 | Epoch: 096 | Batch: 000 | Loss: 0.47223
+Estimator: 003 | Epoch: 096 | Batch: 000 | Loss: 0.39069
+Estimator: 004 | Epoch: 096 | Batch: 000 | Loss: 0.38843
+Estimator: 005 | Epoch: 096 | Batch: 000 | Loss: 0.45685
+Estimator: 006 | Epoch: 096 | Batch: 000 | Loss: 0.44126
+Estimator: 000 | Epoch: 097 | Batch: 000 | Loss: 0.46103
+Estimator: 001 | Epoch: 097 | Batch: 000 | Loss: 0.39274
+Estimator: 002 | Epoch: 097 | Batch: 000 | Loss: 0.42232
+Estimator: 003 | Epoch: 097 | Batch: 000 | Loss: 0.45119
+Estimator: 004 | Epoch: 097 | Batch: 000 | Loss: 0.46174
+Estimator: 005 | Epoch: 097 | Batch: 000 | Loss: 0.43006
+Estimator: 006 | Epoch: 097 | Batch: 000 | Loss: 0.41017
+Estimator: 000 | Epoch: 098 | Batch: 000 | Loss: 0.45619
+Estimator: 001 | Epoch: 098 | Batch: 000 | Loss: 0.51349
+Estimator: 002 | Epoch: 098 | Batch: 000 | Loss: 0.44415
+Estimator: 003 | Epoch: 098 | Batch: 000 | Loss: 0.48641
+Estimator: 004 | Epoch: 098 | Batch: 000 | Loss: 0.48199
+Estimator: 005 | Epoch: 098 | Batch: 000 | Loss: 0.45611
+Estimator: 006 | Epoch: 098 | Batch: 000 | Loss: 0.43552
+Estimator: 000 | Epoch: 099 | Batch: 000 | Loss: 0.40772
+Estimator: 001 | Epoch: 099 | Batch: 000 | Loss: 0.36836
+Estimator: 002 | Epoch: 099 | Batch: 000 | Loss: 0.40943
+Estimator: 003 | Epoch: 099 | Batch: 000 | Loss: 0.41512
+Estimator: 004 | Epoch: 099 | Batch: 000 | Loss: 0.38192
+Estimator: 005 | Epoch: 099 | Batch: 000 | Loss: 0.42767
+Estimator: 006 | Epoch: 099 | Batch: 000 | Loss: 0.47457
+Estimator: 000 | Epoch: 100 | Batch: 000 | Loss: 0.44468
+Estimator: 001 | Epoch: 100 | Batch: 000 | Loss: 0.50650
+Estimator: 002 | Epoch: 100 | Batch: 000 | Loss: 0.47304
+Estimator: 003 | Epoch: 100 | Batch: 000 | Loss: 0.45371
+Estimator: 004 | Epoch: 100 | Batch: 000 | Loss: 0.43487
+Estimator: 005 | Epoch: 100 | Batch: 000 | Loss: 0.40384
+Estimator: 006 | Epoch: 100 | Batch: 000 | Loss: 0.46982
+Estimator: 000 | Epoch: 101 | Batch: 000 | Loss: 0.42783
+Estimator: 001 | Epoch: 101 | Batch: 000 | Loss: 0.43624
+Estimator: 002 | Epoch: 101 | Batch: 000 | Loss: 0.44882
+Estimator: 003 | Epoch: 101 | Batch: 000 | Loss: 0.44297
+Estimator: 004 | Epoch: 101 | Batch: 000 | Loss: 0.46328
+Estimator: 005 | Epoch: 101 | Batch: 000 | Loss: 0.45957
+Estimator: 006 | Epoch: 101 | Batch: 000 | Loss: 0.42585
+Estimator: 000 | Epoch: 102 | Batch: 000 | Loss: 0.42122
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 001 | Epoch: 102 | Batch: 000 | Loss: 0.40905
+Estimator: 002 | Epoch: 102 | Batch: 000 | Loss: 0.40864
+Estimator: 003 | Epoch: 102 | Batch: 000 | Loss: 0.39397
+Estimator: 004 | Epoch: 102 | Batch: 000 | Loss: 0.50296
+Estimator: 005 | Epoch: 102 | Batch: 000 | Loss: 0.42835
+Estimator: 006 | Epoch: 102 | Batch: 000 | Loss: 0.35993
+Estimator: 000 | Epoch: 103 | Batch: 000 | Loss: 0.39253
+Estimator: 001 | Epoch: 103 | Batch: 000 | Loss: 0.41169
+Estimator: 002 | Epoch: 103 | Batch: 000 | Loss: 0.41748
+Estimator: 003 | Epoch: 103 | Batch: 000 | Loss: 0.41653
+Estimator: 004 | Epoch: 103 | Batch: 000 | Loss: 0.50240
+Estimator: 005 | Epoch: 103 | Batch: 000 | Loss: 0.46626
+Estimator: 006 | Epoch: 103 | Batch: 000 | Loss: 0.39265
+Estimator: 000 | Epoch: 104 | Batch: 000 | Loss: 0.43697
+Estimator: 001 | Epoch: 104 | Batch: 000 | Loss: 0.43379
+Estimator: 002 | Epoch: 104 | Batch: 000 | Loss: 0.42961
+Estimator: 003 | Epoch: 104 | Batch: 000 | Loss: 0.46009
+Estimator: 004 | Epoch: 104 | Batch: 000 | Loss: 0.52555
+Estimator: 005 | Epoch: 104 | Batch: 000 | Loss: 0.39908
+Estimator: 006 | Epoch: 104 | Batch: 000 | Loss: 0.40074
+Estimator: 000 | Epoch: 105 | Batch: 000 | Loss: 0.37086
+Estimator: 001 | Epoch: 105 | Batch: 000 | Loss: 0.47353
+Estimator: 002 | Epoch: 105 | Batch: 000 | Loss: 0.46437
+Estimator: 003 | Epoch: 105 | Batch: 000 | Loss: 0.50967
+Estimator: 004 | Epoch: 105 | Batch: 000 | Loss: 0.42856
+Estimator: 005 | Epoch: 105 | Batch: 000 | Loss: 0.50702
+Estimator: 006 | Epoch: 105 | Batch: 000 | Loss: 0.51273
+Estimator: 000 | Epoch: 106 | Batch: 000 | Loss: 0.40230
+Estimator: 001 | Epoch: 106 | Batch: 000 | Loss: 0.45588
+Estimator: 002 | Epoch: 106 | Batch: 000 | Loss: 0.45594
+Estimator: 003 | Epoch: 106 | Batch: 000 | Loss: 0.43129
+Estimator: 004 | Epoch: 106 | Batch: 000 | Loss: 0.37542
+Estimator: 005 | Epoch: 106 | Batch: 000 | Loss: 0.44779
+Estimator: 006 | Epoch: 106 | Batch: 000 | Loss: 0.47527
+Estimator: 000 | Epoch: 107 | Batch: 000 | Loss: 0.47113
+Estimator: 001 | Epoch: 107 | Batch: 000 | Loss: 0.36027
+Estimator: 002 | Epoch: 107 | Batch: 000 | Loss: 0.47786
+Estimator: 003 | Epoch: 107 | Batch: 000 | Loss: 0.43651
+Estimator: 004 | Epoch: 107 | Batch: 000 | Loss: 0.39628
+Estimator: 005 | Epoch: 107 | Batch: 000 | Loss: 0.41474
+Estimator: 006 | Epoch: 107 | Batch: 000 | Loss: 0.48293
+Estimator: 000 | Epoch: 108 | Batch: 000 | Loss: 0.42788
+Estimator: 001 | Epoch: 108 | Batch: 000 | Loss: 0.43776
+Estimator: 002 | Epoch: 108 | Batch: 000 | Loss: 0.42639
+Estimator: 003 | Epoch: 108 | Batch: 000 | Loss: 0.47383
+Estimator: 004 | Epoch: 108 | Batch: 000 | Loss: 0.43522
+Estimator: 005 | Epoch: 108 | Batch: 000 | Loss: 0.51871
+Estimator: 006 | Epoch: 108 | Batch: 000 | Loss: 0.40579
+Estimator: 000 | Epoch: 109 | Batch: 000 | Loss: 0.39645
+Estimator: 001 | Epoch: 109 | Batch: 000 | Loss: 0.54494
+Estimator: 002 | Epoch: 109 | Batch: 000 | Loss: 0.46882
+Estimator: 003 | Epoch: 109 | Batch: 000 | Loss: 0.48454
+Estimator: 004 | Epoch: 109 | Batch: 000 | Loss: 0.50165
+Estimator: 005 | Epoch: 109 | Batch: 000 | Loss: 0.46429
+Estimator: 006 | Epoch: 109 | Batch: 000 | Loss: 0.44458
+Estimator: 000 | Epoch: 110 | Batch: 000 | Loss: 0.53726
+Estimator: 001 | Epoch: 110 | Batch: 000 | Loss: 0.35453
+Estimator: 002 | Epoch: 110 | Batch: 000 | Loss: 0.49045
+Estimator: 003 | Epoch: 110 | Batch: 000 | Loss: 0.49588
+Estimator: 004 | Epoch: 110 | Batch: 000 | Loss: 0.41377
+Estimator: 005 | Epoch: 110 | Batch: 000 | Loss: 0.41439
+Estimator: 006 | Epoch: 110 | Batch: 000 | Loss: 0.41592
+Estimator: 000 | Epoch: 111 | Batch: 000 | Loss: 0.44278
+Estimator: 001 | Epoch: 111 | Batch: 000 | Loss: 0.47122
+Estimator: 002 | Epoch: 111 | Batch: 000 | Loss: 0.47638
+Estimator: 003 | Epoch: 111 | Batch: 000 | Loss: 0.41013
+Estimator: 004 | Epoch: 111 | Batch: 000 | Loss: 0.49738
+Estimator: 005 | Epoch: 111 | Batch: 000 | Loss: 0.50901
+Estimator: 006 | Epoch: 111 | Batch: 000 | Loss: 0.40963
+Estimator: 000 | Epoch: 112 | Batch: 000 | Loss: 0.43283
+Estimator: 001 | Epoch: 112 | Batch: 000 | Loss: 0.39461
+Estimator: 002 | Epoch: 112 | Batch: 000 | Loss: 0.41063
+Estimator: 003 | Epoch: 112 | Batch: 000 | Loss: 0.42445
+Estimator: 004 | Epoch: 112 | Batch: 000 | Loss: 0.45461
+Estimator: 005 | Epoch: 112 | Batch: 000 | Loss: 0.46377
+Estimator: 006 | Epoch: 112 | Batch: 000 | Loss: 0.37648
+Estimator: 000 | Epoch: 113 | Batch: 000 | Loss: 0.44834
+Estimator: 001 | Epoch: 113 | Batch: 000 | Loss: 0.46643
+Estimator: 002 | Epoch: 113 | Batch: 000 | Loss: 0.41133
+Estimator: 003 | Epoch: 113 | Batch: 000 | Loss: 0.48908
+Estimator: 004 | Epoch: 113 | Batch: 000 | Loss: 0.48168
+Estimator: 005 | Epoch: 113 | Batch: 000 | Loss: 0.61893
+Estimator: 006 | Epoch: 113 | Batch: 000 | Loss: 0.38973
+Estimator: 000 | Epoch: 114 | Batch: 000 | Loss: 0.38518
+Estimator: 001 | Epoch: 114 | Batch: 000 | Loss: 0.47750
+Estimator: 002 | Epoch: 114 | Batch: 000 | Loss: 0.52662
+Estimator: 003 | Epoch: 114 | Batch: 000 | Loss: 0.50863
+Estimator: 004 | Epoch: 114 | Batch: 000 | Loss: 0.35533
+Estimator: 005 | Epoch: 114 | Batch: 000 | Loss: 0.41778
+Estimator: 006 | Epoch: 114 | Batch: 000 | Loss: 0.42094
+Estimator: 000 | Epoch: 115 | Batch: 000 | Loss: 0.37196
+Estimator: 001 | Epoch: 115 | Batch: 000 | Loss: 0.43518
+Estimator: 002 | Epoch: 115 | Batch: 000 | Loss: 0.37878
+Estimator: 003 | Epoch: 115 | Batch: 000 | Loss: 0.43460
+Estimator: 004 | Epoch: 115 | Batch: 000 | Loss: 0.49362
+Estimator: 005 | Epoch: 115 | Batch: 000 | Loss: 0.43580
+Estimator: 006 | Epoch: 115 | Batch: 000 | Loss: 0.46453
+Estimator: 000 | Epoch: 116 | Batch: 000 | Loss: 0.44492
+Estimator: 001 | Epoch: 116 | Batch: 000 | Loss: 0.43822
+Estimator: 002 | Epoch: 116 | Batch: 000 | Loss: 0.47267
+Estimator: 003 | Epoch: 116 | Batch: 000 | Loss: 0.43045
+Estimator: 004 | Epoch: 116 | Batch: 000 | Loss: 0.39798
+Estimator: 005 | Epoch: 116 | Batch: 000 | Loss: 0.43358
+Estimator: 006 | Epoch: 116 | Batch: 000 | Loss: 0.37021
+Estimator: 000 | Epoch: 117 | Batch: 000 | Loss: 0.38958
+Estimator: 001 | Epoch: 117 | Batch: 000 | Loss: 0.45646
+Estimator: 002 | Epoch: 117 | Batch: 000 | Loss: 0.48705
+Estimator: 003 | Epoch: 117 | Batch: 000 | Loss: 0.39363
+Estimator: 004 | Epoch: 117 | Batch: 000 | Loss: 0.35063
+Estimator: 005 | Epoch: 117 | Batch: 000 | Loss: 0.35261
+Estimator: 006 | Epoch: 117 | Batch: 000 | Loss: 0.40680
+Estimator: 000 | Epoch: 118 | Batch: 000 | Loss: 0.47403
+Estimator: 001 | Epoch: 118 | Batch: 000 | Loss: 0.42890
+Estimator: 002 | Epoch: 118 | Batch: 000 | Loss: 0.42794
+Estimator: 003 | Epoch: 118 | Batch: 000 | Loss: 0.42281
+Estimator: 004 | Epoch: 118 | Batch: 000 | Loss: 0.39609
+Estimator: 005 | Epoch: 118 | Batch: 000 | Loss: 0.47615
+Estimator: 006 | Epoch: 118 | Batch: 000 | Loss: 0.46512
+Estimator: 000 | Epoch: 119 | Batch: 000 | Loss: 0.51102
+Estimator: 001 | Epoch: 119 | Batch: 000 | Loss: 0.42321
+Estimator: 002 | Epoch: 119 | Batch: 000 | Loss: 0.43895
+Estimator: 003 | Epoch: 119 | Batch: 000 | Loss: 0.38241
+Estimator: 004 | Epoch: 119 | Batch: 000 | Loss: 0.36250
+Estimator: 005 | Epoch: 119 | Batch: 000 | Loss: 0.46376
+Estimator: 006 | Epoch: 119 | Batch: 000 | Loss: 0.44837
+Estimator: 000 | Epoch: 120 | Batch: 000 | Loss: 0.45594
+Estimator: 001 | Epoch: 120 | Batch: 000 | Loss: 0.39056
+Estimator: 002 | Epoch: 120 | Batch: 000 | Loss: 0.36331
+Estimator: 003 | Epoch: 120 | Batch: 000 | Loss: 0.42364
+Estimator: 004 | Epoch: 120 | Batch: 000 | Loss: 0.41165
+Estimator: 005 | Epoch: 120 | Batch: 000 | Loss: 0.41596
+Estimator: 006 | Epoch: 120 | Batch: 000 | Loss: 0.44434
+Estimator: 000 | Epoch: 121 | Batch: 000 | Loss: 0.44855
+Estimator: 001 | Epoch: 121 | Batch: 000 | Loss: 0.45911
+Estimator: 002 | Epoch: 121 | Batch: 000 | Loss: 0.39318
+Estimator: 003 | Epoch: 121 | Batch: 000 | Loss: 0.45022
+Estimator: 004 | Epoch: 121 | Batch: 000 | Loss: 0.45814
+Estimator: 005 | Epoch: 121 | Batch: 000 | Loss: 0.44905
+Estimator: 006 | Epoch: 121 | Batch: 000 | Loss: 0.35549
+Estimator: 000 | Epoch: 122 | Batch: 000 | Loss: 0.35747
+Estimator: 001 | Epoch: 122 | Batch: 000 | Loss: 0.42638
+Estimator: 002 | Epoch: 122 | Batch: 000 | Loss: 0.43443
+Estimator: 003 | Epoch: 122 | Batch: 000 | Loss: 0.46525
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 004 | Epoch: 122 | Batch: 000 | Loss: 0.44289
+Estimator: 005 | Epoch: 122 | Batch: 000 | Loss: 0.47859
+Estimator: 006 | Epoch: 122 | Batch: 000 | Loss: 0.45980
+Estimator: 000 | Epoch: 123 | Batch: 000 | Loss: 0.37706
+Estimator: 001 | Epoch: 123 | Batch: 000 | Loss: 0.47171
+Estimator: 002 | Epoch: 123 | Batch: 000 | Loss: 0.48191
+Estimator: 003 | Epoch: 123 | Batch: 000 | Loss: 0.44503
+Estimator: 004 | Epoch: 123 | Batch: 000 | Loss: 0.43611
+Estimator: 005 | Epoch: 123 | Batch: 000 | Loss: 0.50822
+Estimator: 006 | Epoch: 123 | Batch: 000 | Loss: 0.50360
+Estimator: 000 | Epoch: 124 | Batch: 000 | Loss: 0.51907
+Estimator: 001 | Epoch: 124 | Batch: 000 | Loss: 0.54619
+Estimator: 002 | Epoch: 124 | Batch: 000 | Loss: 0.49455
+Estimator: 003 | Epoch: 124 | Batch: 000 | Loss: 0.41697
+Estimator: 004 | Epoch: 124 | Batch: 000 | Loss: 0.45893
+Estimator: 005 | Epoch: 124 | Batch: 000 | Loss: 0.40334
+Estimator: 006 | Epoch: 124 | Batch: 000 | Loss: 0.53548
+Estimator: 000 | Epoch: 125 | Batch: 000 | Loss: 0.38287
+Estimator: 001 | Epoch: 125 | Batch: 000 | Loss: 0.50892
+Estimator: 002 | Epoch: 125 | Batch: 000 | Loss: 0.47586
+Estimator: 003 | Epoch: 125 | Batch: 000 | Loss: 0.40851
+Estimator: 004 | Epoch: 125 | Batch: 000 | Loss: 0.41151
+Estimator: 005 | Epoch: 125 | Batch: 000 | Loss: 0.36090
+Estimator: 006 | Epoch: 125 | Batch: 000 | Loss: 0.42124
+Estimator: 000 | Epoch: 126 | Batch: 000 | Loss: 0.49740
+Estimator: 001 | Epoch: 126 | Batch: 000 | Loss: 0.37570
+Estimator: 002 | Epoch: 126 | Batch: 000 | Loss: 0.47569
+Estimator: 003 | Epoch: 126 | Batch: 000 | Loss: 0.40052
+Estimator: 004 | Epoch: 126 | Batch: 000 | Loss: 0.43441
+Estimator: 005 | Epoch: 126 | Batch: 000 | Loss: 0.47324
+Estimator: 006 | Epoch: 126 | Batch: 000 | Loss: 0.47601
+Estimator: 000 | Epoch: 127 | Batch: 000 | Loss: 0.43706
+Estimator: 001 | Epoch: 127 | Batch: 000 | Loss: 0.48271
+Estimator: 002 | Epoch: 127 | Batch: 000 | Loss: 0.35514
+Estimator: 003 | Epoch: 127 | Batch: 000 | Loss: 0.42364
+Estimator: 004 | Epoch: 127 | Batch: 000 | Loss: 0.40050
+Estimator: 005 | Epoch: 127 | Batch: 000 | Loss: 0.50137
+Estimator: 006 | Epoch: 127 | Batch: 000 | Loss: 0.47693
+Estimator: 000 | Epoch: 128 | Batch: 000 | Loss: 0.47150
+Estimator: 001 | Epoch: 128 | Batch: 000 | Loss: 0.40750
+Estimator: 002 | Epoch: 128 | Batch: 000 | Loss: 0.46569
+Estimator: 003 | Epoch: 128 | Batch: 000 | Loss: 0.45820
+Estimator: 004 | Epoch: 128 | Batch: 000 | Loss: 0.41236
+Estimator: 005 | Epoch: 128 | Batch: 000 | Loss: 0.39818
+Estimator: 006 | Epoch: 128 | Batch: 000 | Loss: 0.45690
+Estimator: 000 | Epoch: 129 | Batch: 000 | Loss: 0.49590
+Estimator: 001 | Epoch: 129 | Batch: 000 | Loss: 0.40782
+Estimator: 002 | Epoch: 129 | Batch: 000 | Loss: 0.45518
+Estimator: 003 | Epoch: 129 | Batch: 000 | Loss: 0.45934
+Estimator: 004 | Epoch: 129 | Batch: 000 | Loss: 0.39531
+Estimator: 005 | Epoch: 129 | Batch: 000 | Loss: 0.47062
+Estimator: 006 | Epoch: 129 | Batch: 000 | Loss: 0.49734
+Estimator: 000 | Epoch: 130 | Batch: 000 | Loss: 0.46678
+Estimator: 001 | Epoch: 130 | Batch: 000 | Loss: 0.47681
+Estimator: 002 | Epoch: 130 | Batch: 000 | Loss: 0.41375
+Estimator: 003 | Epoch: 130 | Batch: 000 | Loss: 0.50985
+Estimator: 004 | Epoch: 130 | Batch: 000 | Loss: 0.44177
+Estimator: 005 | Epoch: 130 | Batch: 000 | Loss: 0.42742
+Estimator: 006 | Epoch: 130 | Batch: 000 | Loss: 0.45541
+Estimator: 000 | Epoch: 131 | Batch: 000 | Loss: 0.47582
+Estimator: 001 | Epoch: 131 | Batch: 000 | Loss: 0.38823
+Estimator: 002 | Epoch: 131 | Batch: 000 | Loss: 0.48394
+Estimator: 003 | Epoch: 131 | Batch: 000 | Loss: 0.39842
+Estimator: 004 | Epoch: 131 | Batch: 000 | Loss: 0.40064
+Estimator: 005 | Epoch: 131 | Batch: 000 | Loss: 0.39968
+Estimator: 006 | Epoch: 131 | Batch: 000 | Loss: 0.36728
+Estimator: 000 | Epoch: 132 | Batch: 000 | Loss: 0.41654
+Estimator: 001 | Epoch: 132 | Batch: 000 | Loss: 0.42710
+Estimator: 002 | Epoch: 132 | Batch: 000 | Loss: 0.43073
+Estimator: 003 | Epoch: 132 | Batch: 000 | Loss: 0.36858
+Estimator: 004 | Epoch: 132 | Batch: 000 | Loss: 0.42687
+Estimator: 005 | Epoch: 132 | Batch: 000 | Loss: 0.51144
+Estimator: 006 | Epoch: 132 | Batch: 000 | Loss: 0.46551
+Estimator: 000 | Epoch: 133 | Batch: 000 | Loss: 0.51317
+Estimator: 001 | Epoch: 133 | Batch: 000 | Loss: 0.45098
+Estimator: 002 | Epoch: 133 | Batch: 000 | Loss: 0.41437
+Estimator: 003 | Epoch: 133 | Batch: 000 | Loss: 0.43997
+Estimator: 004 | Epoch: 133 | Batch: 000 | Loss: 0.47565
+Estimator: 005 | Epoch: 133 | Batch: 000 | Loss: 0.47319
+Estimator: 006 | Epoch: 133 | Batch: 000 | Loss: 0.39103
+Estimator: 000 | Epoch: 134 | Batch: 000 | Loss: 0.42496
+Estimator: 001 | Epoch: 134 | Batch: 000 | Loss: 0.40579
+Estimator: 002 | Epoch: 134 | Batch: 000 | Loss: 0.34061
+Estimator: 003 | Epoch: 134 | Batch: 000 | Loss: 0.40678
+Estimator: 004 | Epoch: 134 | Batch: 000 | Loss: 0.51110
+Estimator: 005 | Epoch: 134 | Batch: 000 | Loss: 0.35859
+Estimator: 006 | Epoch: 134 | Batch: 000 | Loss: 0.42763
+Estimator: 000 | Epoch: 135 | Batch: 000 | Loss: 0.35578
+Estimator: 001 | Epoch: 135 | Batch: 000 | Loss: 0.40873
+Estimator: 002 | Epoch: 135 | Batch: 000 | Loss: 0.47604
+Estimator: 003 | Epoch: 135 | Batch: 000 | Loss: 0.42037
+Estimator: 004 | Epoch: 135 | Batch: 000 | Loss: 0.42238
+Estimator: 005 | Epoch: 135 | Batch: 000 | Loss: 0.45036
+Estimator: 006 | Epoch: 135 | Batch: 000 | Loss: 0.46262
+Estimator: 000 | Epoch: 136 | Batch: 000 | Loss: 0.39459
+Estimator: 001 | Epoch: 136 | Batch: 000 | Loss: 0.47660
+Estimator: 002 | Epoch: 136 | Batch: 000 | Loss: 0.44906
+Estimator: 003 | Epoch: 136 | Batch: 000 | Loss: 0.50403
+Estimator: 004 | Epoch: 136 | Batch: 000 | Loss: 0.40980
+Estimator: 005 | Epoch: 136 | Batch: 000 | Loss: 0.41919
+Estimator: 006 | Epoch: 136 | Batch: 000 | Loss: 0.41295
+Estimator: 000 | Epoch: 137 | Batch: 000 | Loss: 0.46516
+Estimator: 001 | Epoch: 137 | Batch: 000 | Loss: 0.49342
+Estimator: 002 | Epoch: 137 | Batch: 000 | Loss: 0.56504
+Estimator: 003 | Epoch: 137 | Batch: 000 | Loss: 0.40275
+Estimator: 004 | Epoch: 137 | Batch: 000 | Loss: 0.39580
+Estimator: 005 | Epoch: 137 | Batch: 000 | Loss: 0.46531
+Estimator: 006 | Epoch: 137 | Batch: 000 | Loss: 0.45743
+Estimator: 000 | Epoch: 138 | Batch: 000 | Loss: 0.44747
+Estimator: 001 | Epoch: 138 | Batch: 000 | Loss: 0.46460
+Estimator: 002 | Epoch: 138 | Batch: 000 | Loss: 0.47080
+Estimator: 003 | Epoch: 138 | Batch: 000 | Loss: 0.37900
+Estimator: 004 | Epoch: 138 | Batch: 000 | Loss: 0.46326
+Estimator: 005 | Epoch: 138 | Batch: 000 | Loss: 0.44784
+Estimator: 006 | Epoch: 138 | Batch: 000 | Loss: 0.51736
+Estimator: 000 | Epoch: 139 | Batch: 000 | Loss: 0.50838
+Estimator: 001 | Epoch: 139 | Batch: 000 | Loss: 0.43424
+Estimator: 002 | Epoch: 139 | Batch: 000 | Loss: 0.44760
+Estimator: 003 | Epoch: 139 | Batch: 000 | Loss: 0.51061
+Estimator: 004 | Epoch: 139 | Batch: 000 | Loss: 0.34314
+Estimator: 005 | Epoch: 139 | Batch: 000 | Loss: 0.34860
+Estimator: 006 | Epoch: 139 | Batch: 000 | Loss: 0.40708
+Estimator: 000 | Epoch: 140 | Batch: 000 | Loss: 0.44056
+Estimator: 001 | Epoch: 140 | Batch: 000 | Loss: 0.45425
+Estimator: 002 | Epoch: 140 | Batch: 000 | Loss: 0.43059
+Estimator: 003 | Epoch: 140 | Batch: 000 | Loss: 0.50464
+Estimator: 004 | Epoch: 140 | Batch: 000 | Loss: 0.48134
+Estimator: 005 | Epoch: 140 | Batch: 000 | Loss: 0.47116
+Estimator: 006 | Epoch: 140 | Batch: 000 | Loss: 0.44614
+Estimator: 000 | Epoch: 141 | Batch: 000 | Loss: 0.48433
+Estimator: 001 | Epoch: 141 | Batch: 000 | Loss: 0.42671
+Estimator: 002 | Epoch: 141 | Batch: 000 | Loss: 0.43609
+Estimator: 003 | Epoch: 141 | Batch: 000 | Loss: 0.47614
+Estimator: 004 | Epoch: 141 | Batch: 000 | Loss: 0.43172
+Estimator: 005 | Epoch: 141 | Batch: 000 | Loss: 0.48774
+Estimator: 006 | Epoch: 141 | Batch: 000 | Loss: 0.42964
+Estimator: 000 | Epoch: 142 | Batch: 000 | Loss: 0.47102
+Estimator: 001 | Epoch: 142 | Batch: 000 | Loss: 0.49715
+Estimator: 002 | Epoch: 142 | Batch: 000 | Loss: 0.47147
+Estimator: 003 | Epoch: 142 | Batch: 000 | Loss: 0.47932
+Estimator: 004 | Epoch: 142 | Batch: 000 | Loss: 0.40912
+Estimator: 005 | Epoch: 142 | Batch: 000 | Loss: 0.39103
+Estimator: 006 | Epoch: 142 | Batch: 000 | Loss: 0.43161
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 000 | Epoch: 143 | Batch: 000 | Loss: 0.36818
+Estimator: 001 | Epoch: 143 | Batch: 000 | Loss: 0.44400
+Estimator: 002 | Epoch: 143 | Batch: 000 | Loss: 0.47707
+Estimator: 003 | Epoch: 143 | Batch: 000 | Loss: 0.41660
+Estimator: 004 | Epoch: 143 | Batch: 000 | Loss: 0.43605
+Estimator: 005 | Epoch: 143 | Batch: 000 | Loss: 0.42895
+Estimator: 006 | Epoch: 143 | Batch: 000 | Loss: 0.44256
+Estimator: 000 | Epoch: 144 | Batch: 000 | Loss: 0.46031
+Estimator: 001 | Epoch: 144 | Batch: 000 | Loss: 0.51579
+Estimator: 002 | Epoch: 144 | Batch: 000 | Loss: 0.45550
+Estimator: 003 | Epoch: 144 | Batch: 000 | Loss: 0.46657
+Estimator: 004 | Epoch: 144 | Batch: 000 | Loss: 0.53851
+Estimator: 005 | Epoch: 144 | Batch: 000 | Loss: 0.48950
+Estimator: 006 | Epoch: 144 | Batch: 000 | Loss: 0.50634
+Estimator: 000 | Epoch: 145 | Batch: 000 | Loss: 0.45288
+Estimator: 001 | Epoch: 145 | Batch: 000 | Loss: 0.46072
+Estimator: 002 | Epoch: 145 | Batch: 000 | Loss: 0.43701
+Estimator: 003 | Epoch: 145 | Batch: 000 | Loss: 0.42633
+Estimator: 004 | Epoch: 145 | Batch: 000 | Loss: 0.42734
+Estimator: 005 | Epoch: 145 | Batch: 000 | Loss: 0.41673
+Estimator: 006 | Epoch: 145 | Batch: 000 | Loss: 0.38967
+Estimator: 000 | Epoch: 146 | Batch: 000 | Loss: 0.42195
+Estimator: 001 | Epoch: 146 | Batch: 000 | Loss: 0.43509
+Estimator: 002 | Epoch: 146 | Batch: 000 | Loss: 0.48504
+Estimator: 003 | Epoch: 146 | Batch: 000 | Loss: 0.38718
+Estimator: 004 | Epoch: 146 | Batch: 000 | Loss: 0.37634
+Estimator: 005 | Epoch: 146 | Batch: 000 | Loss: 0.46501
+Estimator: 006 | Epoch: 146 | Batch: 000 | Loss: 0.42733
+Estimator: 000 | Epoch: 147 | Batch: 000 | Loss: 0.45491
+Estimator: 001 | Epoch: 147 | Batch: 000 | Loss: 0.41726
+Estimator: 002 | Epoch: 147 | Batch: 000 | Loss: 0.46972
+Estimator: 003 | Epoch: 147 | Batch: 000 | Loss: 0.39329
+Estimator: 004 | Epoch: 147 | Batch: 000 | Loss: 0.41226
+Estimator: 005 | Epoch: 147 | Batch: 000 | Loss: 0.44314
+Estimator: 006 | Epoch: 147 | Batch: 000 | Loss: 0.40309
+Estimator: 000 | Epoch: 148 | Batch: 000 | Loss: 0.43896
+Estimator: 001 | Epoch: 148 | Batch: 000 | Loss: 0.49724
+Estimator: 002 | Epoch: 148 | Batch: 000 | Loss: 0.40908
+Estimator: 003 | Epoch: 148 | Batch: 000 | Loss: 0.41016
+Estimator: 004 | Epoch: 148 | Batch: 000 | Loss: 0.47430
+Estimator: 005 | Epoch: 148 | Batch: 000 | Loss: 0.48911
+Estimator: 006 | Epoch: 148 | Batch: 000 | Loss: 0.45152
+Estimator: 000 | Epoch: 149 | Batch: 000 | Loss: 0.41834
+Estimator: 001 | Epoch: 149 | Batch: 000 | Loss: 0.52110
+Estimator: 002 | Epoch: 149 | Batch: 000 | Loss: 0.43114
+Estimator: 003 | Epoch: 149 | Batch: 000 | Loss: 0.42240
+Estimator: 004 | Epoch: 149 | Batch: 000 | Loss: 0.39214
+Estimator: 005 | Epoch: 149 | Batch: 000 | Loss: 0.46827
+Estimator: 006 | Epoch: 149 | Batch: 000 | Loss: 0.44263
+Estimator: 000 | Epoch: 150 | Batch: 000 | Loss: 0.46193
+Estimator: 001 | Epoch: 150 | Batch: 000 | Loss: 0.47854
+Estimator: 002 | Epoch: 150 | Batch: 000 | Loss: 0.45813
+Estimator: 003 | Epoch: 150 | Batch: 000 | Loss: 0.43372
+Estimator: 004 | Epoch: 150 | Batch: 000 | Loss: 0.52219
+Estimator: 005 | Epoch: 150 | Batch: 000 | Loss: 0.37730
+Estimator: 006 | Epoch: 150 | Batch: 000 | Loss: 0.48720
+Estimator: 000 | Epoch: 151 | Batch: 000 | Loss: 0.54922
+Estimator: 001 | Epoch: 151 | Batch: 000 | Loss: 0.53090
+Estimator: 002 | Epoch: 151 | Batch: 000 | Loss: 0.44993
+Estimator: 003 | Epoch: 151 | Batch: 000 | Loss: 0.48574
+Estimator: 004 | Epoch: 151 | Batch: 000 | Loss: 0.39242
+Estimator: 005 | Epoch: 151 | Batch: 000 | Loss: 0.40995
+Estimator: 006 | Epoch: 151 | Batch: 000 | Loss: 0.42979
+Estimator: 000 | Epoch: 152 | Batch: 000 | Loss: 0.49009
+Estimator: 001 | Epoch: 152 | Batch: 000 | Loss: 0.45977
+Estimator: 002 | Epoch: 152 | Batch: 000 | Loss: 0.50920
+Estimator: 003 | Epoch: 152 | Batch: 000 | Loss: 0.41628
+Estimator: 004 | Epoch: 152 | Batch: 000 | Loss: 0.39796
+Estimator: 005 | Epoch: 152 | Batch: 000 | Loss: 0.41331
+Estimator: 006 | Epoch: 152 | Batch: 000 | Loss: 0.38173
+Estimator: 000 | Epoch: 153 | Batch: 000 | Loss: 0.44210
+Estimator: 001 | Epoch: 153 | Batch: 000 | Loss: 0.45607
+Estimator: 002 | Epoch: 153 | Batch: 000 | Loss: 0.41329
+Estimator: 003 | Epoch: 153 | Batch: 000 | Loss: 0.39991
+Estimator: 004 | Epoch: 153 | Batch: 000 | Loss: 0.40227
+Estimator: 005 | Epoch: 153 | Batch: 000 | Loss: 0.48674
+Estimator: 006 | Epoch: 153 | Batch: 000 | Loss: 0.49648
+Estimator: 000 | Epoch: 154 | Batch: 000 | Loss: 0.43419
+Estimator: 001 | Epoch: 154 | Batch: 000 | Loss: 0.43273
+Estimator: 002 | Epoch: 154 | Batch: 000 | Loss: 0.48762
+Estimator: 003 | Epoch: 154 | Batch: 000 | Loss: 0.46961
+Estimator: 004 | Epoch: 154 | Batch: 000 | Loss: 0.39210
+Estimator: 005 | Epoch: 154 | Batch: 000 | Loss: 0.48792
+Estimator: 006 | Epoch: 154 | Batch: 000 | Loss: 0.39754
+Estimator: 000 | Epoch: 155 | Batch: 000 | Loss: 0.40846
+Estimator: 001 | Epoch: 155 | Batch: 000 | Loss: 0.41995
+Estimator: 002 | Epoch: 155 | Batch: 000 | Loss: 0.49559
+Estimator: 003 | Epoch: 155 | Batch: 000 | Loss: 0.44217
+Estimator: 004 | Epoch: 155 | Batch: 000 | Loss: 0.40281
+Estimator: 005 | Epoch: 155 | Batch: 000 | Loss: 0.46362
+Estimator: 006 | Epoch: 155 | Batch: 000 | Loss: 0.48944
+Estimator: 000 | Epoch: 156 | Batch: 000 | Loss: 0.39648
+Estimator: 001 | Epoch: 156 | Batch: 000 | Loss: 0.42302
+Estimator: 002 | Epoch: 156 | Batch: 000 | Loss: 0.50435
+Estimator: 003 | Epoch: 156 | Batch: 000 | Loss: 0.43658
+Estimator: 004 | Epoch: 156 | Batch: 000 | Loss: 0.42557
+Estimator: 005 | Epoch: 156 | Batch: 000 | Loss: 0.46657
+Estimator: 006 | Epoch: 156 | Batch: 000 | Loss: 0.51519
+Estimator: 000 | Epoch: 157 | Batch: 000 | Loss: 0.39247
+Estimator: 001 | Epoch: 157 | Batch: 000 | Loss: 0.44624
+Estimator: 002 | Epoch: 157 | Batch: 000 | Loss: 0.39595
+Estimator: 003 | Epoch: 157 | Batch: 000 | Loss: 0.43061
+Estimator: 004 | Epoch: 157 | Batch: 000 | Loss: 0.41655
+Estimator: 005 | Epoch: 157 | Batch: 000 | Loss: 0.53058
+Estimator: 006 | Epoch: 157 | Batch: 000 | Loss: 0.39569
+Estimator: 000 | Epoch: 158 | Batch: 000 | Loss: 0.52448
+Estimator: 001 | Epoch: 158 | Batch: 000 | Loss: 0.44174
+Estimator: 002 | Epoch: 158 | Batch: 000 | Loss: 0.44761
+Estimator: 003 | Epoch: 158 | Batch: 000 | Loss: 0.42253
+Estimator: 004 | Epoch: 158 | Batch: 000 | Loss: 0.42690
+Estimator: 005 | Epoch: 158 | Batch: 000 | Loss: 0.37143
+Estimator: 006 | Epoch: 158 | Batch: 000 | Loss: 0.53628
+Estimator: 000 | Epoch: 159 | Batch: 000 | Loss: 0.40496
+Estimator: 001 | Epoch: 159 | Batch: 000 | Loss: 0.45004
+Estimator: 002 | Epoch: 159 | Batch: 000 | Loss: 0.48701
+Estimator: 003 | Epoch: 159 | Batch: 000 | Loss: 0.47026
+Estimator: 004 | Epoch: 159 | Batch: 000 | Loss: 0.50418
+Estimator: 005 | Epoch: 159 | Batch: 000 | Loss: 0.44724
+Estimator: 006 | Epoch: 159 | Batch: 000 | Loss: 0.44418
+Estimator: 000 | Epoch: 160 | Batch: 000 | Loss: 0.43044
+Estimator: 001 | Epoch: 160 | Batch: 000 | Loss: 0.39053
+Estimator: 002 | Epoch: 160 | Batch: 000 | Loss: 0.41033
+Estimator: 003 | Epoch: 160 | Batch: 000 | Loss: 0.41497
+Estimator: 004 | Epoch: 160 | Batch: 000 | Loss: 0.42524
+Estimator: 005 | Epoch: 160 | Batch: 000 | Loss: 0.43104
+Estimator: 006 | Epoch: 160 | Batch: 000 | Loss: 0.46756
+Estimator: 000 | Epoch: 161 | Batch: 000 | Loss: 0.39126
+Estimator: 001 | Epoch: 161 | Batch: 000 | Loss: 0.48610
+Estimator: 002 | Epoch: 161 | Batch: 000 | Loss: 0.44724
+Estimator: 003 | Epoch: 161 | Batch: 000 | Loss: 0.46957
+Estimator: 004 | Epoch: 161 | Batch: 000 | Loss: 0.37657
+Estimator: 005 | Epoch: 161 | Batch: 000 | Loss: 0.44457
+Estimator: 006 | Epoch: 161 | Batch: 000 | Loss: 0.37192
+Estimator: 000 | Epoch: 162 | Batch: 000 | Loss: 0.40302
+Estimator: 001 | Epoch: 162 | Batch: 000 | Loss: 0.48736
+Estimator: 002 | Epoch: 162 | Batch: 000 | Loss: 0.44923
+Estimator: 003 | Epoch: 162 | Batch: 000 | Loss: 0.46912
+Estimator: 004 | Epoch: 162 | Batch: 000 | Loss: 0.39427
+Estimator: 005 | Epoch: 162 | Batch: 000 | Loss: 0.40671
+Estimator: 006 | Epoch: 162 | Batch: 000 | Loss: 0.47584
+Estimator: 000 | Epoch: 163 | Batch: 000 | Loss: 0.47362
+Estimator: 001 | Epoch: 163 | Batch: 000 | Loss: 0.47147
+Estimator: 002 | Epoch: 163 | Batch: 000 | Loss: 0.41110
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 003 | Epoch: 163 | Batch: 000 | Loss: 0.41507
+Estimator: 004 | Epoch: 163 | Batch: 000 | Loss: 0.47055
+Estimator: 005 | Epoch: 163 | Batch: 000 | Loss: 0.39264
+Estimator: 006 | Epoch: 163 | Batch: 000 | Loss: 0.45468
+Estimator: 000 | Epoch: 164 | Batch: 000 | Loss: 0.45829
+Estimator: 001 | Epoch: 164 | Batch: 000 | Loss: 0.42935
+Estimator: 002 | Epoch: 164 | Batch: 000 | Loss: 0.46828
+Estimator: 003 | Epoch: 164 | Batch: 000 | Loss: 0.39433
+Estimator: 004 | Epoch: 164 | Batch: 000 | Loss: 0.41627
+Estimator: 005 | Epoch: 164 | Batch: 000 | Loss: 0.42450
+Estimator: 006 | Epoch: 164 | Batch: 000 | Loss: 0.39995
+Estimator: 000 | Epoch: 165 | Batch: 000 | Loss: 0.42620
+Estimator: 001 | Epoch: 165 | Batch: 000 | Loss: 0.37863
+Estimator: 002 | Epoch: 165 | Batch: 000 | Loss: 0.33768
+Estimator: 003 | Epoch: 165 | Batch: 000 | Loss: 0.40662
+Estimator: 004 | Epoch: 165 | Batch: 000 | Loss: 0.42678
+Estimator: 005 | Epoch: 165 | Batch: 000 | Loss: 0.36267
+Estimator: 006 | Epoch: 165 | Batch: 000 | Loss: 0.43499
+Estimator: 000 | Epoch: 166 | Batch: 000 | Loss: 0.38469
+Estimator: 001 | Epoch: 166 | Batch: 000 | Loss: 0.42903
+Estimator: 002 | Epoch: 166 | Batch: 000 | Loss: 0.42427
+Estimator: 003 | Epoch: 166 | Batch: 000 | Loss: 0.48073
+Estimator: 004 | Epoch: 166 | Batch: 000 | Loss: 0.33971
+Estimator: 005 | Epoch: 166 | Batch: 000 | Loss: 0.41315
+Estimator: 006 | Epoch: 166 | Batch: 000 | Loss: 0.50193
+Estimator: 000 | Epoch: 167 | Batch: 000 | Loss: 0.53052
+Estimator: 001 | Epoch: 167 | Batch: 000 | Loss: 0.43224
+Estimator: 002 | Epoch: 167 | Batch: 000 | Loss: 0.44806
+Estimator: 003 | Epoch: 167 | Batch: 000 | Loss: 0.46735
+Estimator: 004 | Epoch: 167 | Batch: 000 | Loss: 0.39578
+Estimator: 005 | Epoch: 167 | Batch: 000 | Loss: 0.41960
+Estimator: 006 | Epoch: 167 | Batch: 000 | Loss: 0.37665
+Estimator: 000 | Epoch: 168 | Batch: 000 | Loss: 0.45429
+Estimator: 001 | Epoch: 168 | Batch: 000 | Loss: 0.45174
+Estimator: 002 | Epoch: 168 | Batch: 000 | Loss: 0.56024
+Estimator: 003 | Epoch: 168 | Batch: 000 | Loss: 0.41296
+Estimator: 004 | Epoch: 168 | Batch: 000 | Loss: 0.45959
+Estimator: 005 | Epoch: 168 | Batch: 000 | Loss: 0.39768
+Estimator: 006 | Epoch: 168 | Batch: 000 | Loss: 0.49020
+Estimator: 000 | Epoch: 169 | Batch: 000 | Loss: 0.43355
+Estimator: 001 | Epoch: 169 | Batch: 000 | Loss: 0.51843
+Estimator: 002 | Epoch: 169 | Batch: 000 | Loss: 0.37697
+Estimator: 003 | Epoch: 169 | Batch: 000 | Loss: 0.43976
+Estimator: 004 | Epoch: 169 | Batch: 000 | Loss: 0.40903
+Estimator: 005 | Epoch: 169 | Batch: 000 | Loss: 0.44401
+Estimator: 006 | Epoch: 169 | Batch: 000 | Loss: 0.50047
+Estimator: 000 | Epoch: 170 | Batch: 000 | Loss: 0.41784
+Estimator: 001 | Epoch: 170 | Batch: 000 | Loss: 0.41789
+Estimator: 002 | Epoch: 170 | Batch: 000 | Loss: 0.48953
+Estimator: 003 | Epoch: 170 | Batch: 000 | Loss: 0.40325
+Estimator: 004 | Epoch: 170 | Batch: 000 | Loss: 0.47152
+Estimator: 005 | Epoch: 170 | Batch: 000 | Loss: 0.47846
+Estimator: 006 | Epoch: 170 | Batch: 000 | Loss: 0.43881
+Estimator: 000 | Epoch: 171 | Batch: 000 | Loss: 0.35819
+Estimator: 001 | Epoch: 171 | Batch: 000 | Loss: 0.42740
+Estimator: 002 | Epoch: 171 | Batch: 000 | Loss: 0.40833
+Estimator: 003 | Epoch: 171 | Batch: 000 | Loss: 0.38196
+Estimator: 004 | Epoch: 171 | Batch: 000 | Loss: 0.38891
+Estimator: 005 | Epoch: 171 | Batch: 000 | Loss: 0.50866
+Estimator: 006 | Epoch: 171 | Batch: 000 | Loss: 0.48874
+Estimator: 000 | Epoch: 172 | Batch: 000 | Loss: 0.47419
+Estimator: 001 | Epoch: 172 | Batch: 000 | Loss: 0.39319
+Estimator: 002 | Epoch: 172 | Batch: 000 | Loss: 0.39424
+Estimator: 003 | Epoch: 172 | Batch: 000 | Loss: 0.45788
+Estimator: 004 | Epoch: 172 | Batch: 000 | Loss: 0.48455
+Estimator: 005 | Epoch: 172 | Batch: 000 | Loss: 0.43752
+Estimator: 006 | Epoch: 172 | Batch: 000 | Loss: 0.40816
+Estimator: 000 | Epoch: 173 | Batch: 000 | Loss: 0.36097
+Estimator: 001 | Epoch: 173 | Batch: 000 | Loss: 0.42502
+Estimator: 002 | Epoch: 173 | Batch: 000 | Loss: 0.44502
+Estimator: 003 | Epoch: 173 | Batch: 000 | Loss: 0.40019
+Estimator: 004 | Epoch: 173 | Batch: 000 | Loss: 0.41354
+Estimator: 005 | Epoch: 173 | Batch: 000 | Loss: 0.39601
+Estimator: 006 | Epoch: 173 | Batch: 000 | Loss: 0.38000
+Estimator: 000 | Epoch: 174 | Batch: 000 | Loss: 0.40656
+Estimator: 001 | Epoch: 174 | Batch: 000 | Loss: 0.50270
+Estimator: 002 | Epoch: 174 | Batch: 000 | Loss: 0.40564
+Estimator: 003 | Epoch: 174 | Batch: 000 | Loss: 0.49776
+Estimator: 004 | Epoch: 174 | Batch: 000 | Loss: 0.48310
+Estimator: 005 | Epoch: 174 | Batch: 000 | Loss: 0.33745
+Estimator: 006 | Epoch: 174 | Batch: 000 | Loss: 0.45645
+Estimator: 000 | Epoch: 175 | Batch: 000 | Loss: 0.44863
+Estimator: 001 | Epoch: 175 | Batch: 000 | Loss: 0.45903
+Estimator: 002 | Epoch: 175 | Batch: 000 | Loss: 0.45709
+Estimator: 003 | Epoch: 175 | Batch: 000 | Loss: 0.41156
+Estimator: 004 | Epoch: 175 | Batch: 000 | Loss: 0.47790
+Estimator: 005 | Epoch: 175 | Batch: 000 | Loss: 0.36514
+Estimator: 006 | Epoch: 175 | Batch: 000 | Loss: 0.48737
+Estimator: 000 | Epoch: 176 | Batch: 000 | Loss: 0.54129
+Estimator: 001 | Epoch: 176 | Batch: 000 | Loss: 0.45734
+Estimator: 002 | Epoch: 176 | Batch: 000 | Loss: 0.44765
+Estimator: 003 | Epoch: 176 | Batch: 000 | Loss: 0.37806
+Estimator: 004 | Epoch: 176 | Batch: 000 | Loss: 0.53342
+Estimator: 005 | Epoch: 176 | Batch: 000 | Loss: 0.46186
+Estimator: 006 | Epoch: 176 | Batch: 000 | Loss: 0.46571
+Estimator: 000 | Epoch: 177 | Batch: 000 | Loss: 0.46962
+Estimator: 001 | Epoch: 177 | Batch: 000 | Loss: 0.37793
+Estimator: 002 | Epoch: 177 | Batch: 000 | Loss: 0.52501
+Estimator: 003 | Epoch: 177 | Batch: 000 | Loss: 0.40237
+Estimator: 004 | Epoch: 177 | Batch: 000 | Loss: 0.50110
+Estimator: 005 | Epoch: 177 | Batch: 000 | Loss: 0.41259
+Estimator: 006 | Epoch: 177 | Batch: 000 | Loss: 0.38975
+Estimator: 000 | Epoch: 178 | Batch: 000 | Loss: 0.38026
+Estimator: 001 | Epoch: 178 | Batch: 000 | Loss: 0.46151
+Estimator: 002 | Epoch: 178 | Batch: 000 | Loss: 0.40745
+Estimator: 003 | Epoch: 178 | Batch: 000 | Loss: 0.41507
+Estimator: 004 | Epoch: 178 | Batch: 000 | Loss: 0.35665
+Estimator: 005 | Epoch: 178 | Batch: 000 | Loss: 0.49467
+Estimator: 006 | Epoch: 178 | Batch: 000 | Loss: 0.35029
+Estimator: 000 | Epoch: 179 | Batch: 000 | Loss: 0.41075
+Estimator: 001 | Epoch: 179 | Batch: 000 | Loss: 0.46643
+Estimator: 002 | Epoch: 179 | Batch: 000 | Loss: 0.39118
+Estimator: 003 | Epoch: 179 | Batch: 000 | Loss: 0.45681
+Estimator: 004 | Epoch: 179 | Batch: 000 | Loss: 0.41637
+Estimator: 005 | Epoch: 179 | Batch: 000 | Loss: 0.44393
+Estimator: 006 | Epoch: 179 | Batch: 000 | Loss: 0.42366
+Estimator: 000 | Epoch: 180 | Batch: 000 | Loss: 0.44467
+Estimator: 001 | Epoch: 180 | Batch: 000 | Loss: 0.44765
+Estimator: 002 | Epoch: 180 | Batch: 000 | Loss: 0.33667
+Estimator: 003 | Epoch: 180 | Batch: 000 | Loss: 0.46199
+Estimator: 004 | Epoch: 180 | Batch: 000 | Loss: 0.43813
+Estimator: 005 | Epoch: 180 | Batch: 000 | Loss: 0.46759
+Estimator: 006 | Epoch: 180 | Batch: 000 | Loss: 0.53875
+Estimator: 000 | Epoch: 181 | Batch: 000 | Loss: 0.40596
+Estimator: 001 | Epoch: 181 | Batch: 000 | Loss: 0.40786
+Estimator: 002 | Epoch: 181 | Batch: 000 | Loss: 0.42982
+Estimator: 003 | Epoch: 181 | Batch: 000 | Loss: 0.57113
+Estimator: 004 | Epoch: 181 | Batch: 000 | Loss: 0.45189
+Estimator: 005 | Epoch: 181 | Batch: 000 | Loss: 0.39446
+Estimator: 006 | Epoch: 181 | Batch: 000 | Loss: 0.46591
+Estimator: 000 | Epoch: 182 | Batch: 000 | Loss: 0.48037
+Estimator: 001 | Epoch: 182 | Batch: 000 | Loss: 0.41557
+Estimator: 002 | Epoch: 182 | Batch: 000 | Loss: 0.50283
+Estimator: 003 | Epoch: 182 | Batch: 000 | Loss: 0.49320
+Estimator: 004 | Epoch: 182 | Batch: 000 | Loss: 0.44638
+Estimator: 005 | Epoch: 182 | Batch: 000 | Loss: 0.43111
+Estimator: 006 | Epoch: 182 | Batch: 000 | Loss: 0.49006
+Estimator: 000 | Epoch: 183 | Batch: 000 | Loss: 0.43730
+Estimator: 001 | Epoch: 183 | Batch: 000 | Loss: 0.47007
+Estimator: 002 | Epoch: 183 | Batch: 000 | Loss: 0.42568
+Estimator: 003 | Epoch: 183 | Batch: 000 | Loss: 0.47408
+Estimator: 004 | Epoch: 183 | Batch: 000 | Loss: 0.43856
+Estimator: 005 | Epoch: 183 | Batch: 000 | Loss: 0.49407
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+/home/shalei/cfDNAAnalysis/Focal_loss.py:43: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  P = F.softmax(inputs)
+Estimator: 006 | Epoch: 183 | Batch: 000 | Loss: 0.44197
+Estimator: 000 | Epoch: 184 | Batch: 000 | Loss: 0.46070
+Estimator: 001 | Epoch: 184 | Batch: 000 | Loss: 0.45187
+Estimator: 002 | Epoch: 184 | Batch: 000 | Loss: 0.49666
+Estimator: 003 | Epoch: 184 | Batch: 000 | Loss: 0.42770
+Estimator: 004 | Epoch: 184 | Batch: 000 | Loss: 0.37761
+Estimator: 005 | Epoch: 184 | Batch: 000 | Loss: 0.43624
+Estimator: 006 | Epoch: 184 | Batch: 000 | Loss: 0.40680
+Estimator: 000 | Epoch: 185 | Batch: 000 | Loss: 0.45057
+Estimator: 001 | Epoch: 185 | Batch: 000 | Loss: 0.43005
+Estimator: 002 | Epoch: 185 | Batch: 000 | Loss: 0.46017
+Estimator: 003 | Epoch: 185 | Batch: 000 | Loss: 0.39166
+Estimator: 004 | Epoch: 185 | Batch: 000 | Loss: 0.49161
+Estimator: 005 | Epoch: 185 | Batch: 000 | Loss: 0.40450
+Estimator: 006 | Epoch: 185 | Batch: 000 | Loss: 0.42218
+Estimator: 000 | Epoch: 186 | Batch: 000 | Loss: 0.43372
+Estimator: 001 | Epoch: 186 | Batch: 000 | Loss: 0.37492
+Estimator: 002 | Epoch: 186 | Batch: 000 | Loss: 0.48164
+Estimator: 003 | Epoch: 186 | Batch: 000 | Loss: 0.43181
+Estimator: 004 | Epoch: 186 | Batch: 000 | Loss: 0.44721
+Estimator: 005 | Epoch: 186 | Batch: 000 | Loss: 0.44559
+Estimator: 006 | Epoch: 186 | Batch: 000 | Loss: 0.51017
+Estimator: 000 | Epoch: 187 | Batch: 000 | Loss: 0.46215
+Estimator: 001 | Epoch: 187 | Batch: 000 | Loss: 0.44502
+Estimator: 002 | Epoch: 187 | Batch: 000 | Loss: 0.51909
+Estimator: 003 | Epoch: 187 | Batch: 000 | Loss: 0.49071
+Estimator: 004 | Epoch: 187 | Batch: 000 | Loss: 0.35153
+Estimator: 005 | Epoch: 187 | Batch: 000 | Loss: 0.52060
+Estimator: 006 | Epoch: 187 | Batch: 000 | Loss: 0.44411
+Estimator: 000 | Epoch: 188 | Batch: 000 | Loss: 0.43514
+Estimator: 001 | Epoch: 188 | Batch: 000 | Loss: 0.41018
+Estimator: 002 | Epoch: 188 | Batch: 000 | Loss: 0.37498
+Estimator: 003 | Epoch: 188 | Batch: 000 | Loss: 0.45781
+Estimator: 004 | Epoch: 188 | Batch: 000 | Loss: 0.39861
+Estimator: 005 | Epoch: 188 | Batch: 000 | Loss: 0.47687
+Estimator: 006 | Epoch: 188 | Batch: 000 | Loss: 0.42013
+Estimator: 000 | Epoch: 189 | Batch: 000 | Loss: 0.41303
+Estimator: 001 | Epoch: 189 | Batch: 000 | Loss: 0.47264
+Estimator: 002 | Epoch: 189 | Batch: 000 | Loss: 0.50359
+Estimator: 003 | Epoch: 189 | Batch: 000 | Loss: 0.41695
+Estimator: 004 | Epoch: 189 | Batch: 000 | Loss: 0.44730
+Estimator: 005 | Epoch: 189 | Batch: 000 | Loss: 0.43972
+Estimator: 006 | Epoch: 189 | Batch: 000 | Loss: 0.41463
+Estimator: 000 | Epoch: 190 | Batch: 000 | Loss: 0.44455
+Estimator: 001 | Epoch: 190 | Batch: 000 | Loss: 0.43186
+Estimator: 002 | Epoch: 190 | Batch: 000 | Loss: 0.37714
+Estimator: 003 | Epoch: 190 | Batch: 000 | Loss: 0.42001
+Estimator: 004 | Epoch: 190 | Batch: 000 | Loss: 0.41835
+Estimator: 005 | Epoch: 190 | Batch: 000 | Loss: 0.45270
+Estimator: 006 | Epoch: 190 | Batch: 000 | Loss: 0.44660
+Estimator: 000 | Epoch: 191 | Batch: 000 | Loss: 0.35343
+Estimator: 001 | Epoch: 191 | Batch: 000 | Loss: 0.49143
+Estimator: 002 | Epoch: 191 | Batch: 000 | Loss: 0.58135
+Estimator: 003 | Epoch: 191 | Batch: 000 | Loss: 0.45416
+Estimator: 004 | Epoch: 191 | Batch: 000 | Loss: 0.46058
+Estimator: 005 | Epoch: 191 | Batch: 000 | Loss: 0.45185
+Estimator: 006 | Epoch: 191 | Batch: 000 | Loss: 0.37208
+Estimator: 000 | Epoch: 192 | Batch: 000 | Loss: 0.39242
+Estimator: 001 | Epoch: 192 | Batch: 000 | Loss: 0.43051
+Estimator: 002 | Epoch: 192 | Batch: 000 | Loss: 0.38611
+Estimator: 003 | Epoch: 192 | Batch: 000 | Loss: 0.46658
+Estimator: 004 | Epoch: 192 | Batch: 000 | Loss: 0.51340
+Estimator: 005 | Epoch: 192 | Batch: 000 | Loss: 0.42542
+Estimator: 006 | Epoch: 192 | Batch: 000 | Loss: 0.49546
+Estimator: 000 | Epoch: 193 | Batch: 000 | Loss: 0.44176
+Estimator: 001 | Epoch: 193 | Batch: 000 | Loss: 0.44300
+Estimator: 002 | Epoch: 193 | Batch: 000 | Loss: 0.43742
+Estimator: 003 | Epoch: 193 | Batch: 000 | Loss: 0.35911
+Estimator: 004 | Epoch: 193 | Batch: 000 | Loss: 0.51667
+Estimator: 005 | Epoch: 193 | Batch: 000 | Loss: 0.44566
+Estimator: 006 | Epoch: 193 | Batch: 000 | Loss: 0.53270
+Estimator: 000 | Epoch: 194 | Batch: 000 | Loss: 0.48748
+Estimator: 001 | Epoch: 194 | Batch: 000 | Loss: 0.44612
+Estimator: 002 | Epoch: 194 | Batch: 000 | Loss: 0.41202
+Estimator: 003 | Epoch: 194 | Batch: 000 | Loss: 0.44340
+Estimator: 004 | Epoch: 194 | Batch: 000 | Loss: 0.38702
+Estimator: 005 | Epoch: 194 | Batch: 000 | Loss: 0.49522
+Estimator: 006 | Epoch: 194 | Batch: 000 | Loss: 0.50353
+Estimator: 000 | Epoch: 195 | Batch: 000 | Loss: 0.32788
+Estimator: 001 | Epoch: 195 | Batch: 000 | Loss: 0.39790
+Estimator: 002 | Epoch: 195 | Batch: 000 | Loss: 0.46704
+Estimator: 003 | Epoch: 195 | Batch: 000 | Loss: 0.41630
+Estimator: 004 | Epoch: 195 | Batch: 000 | Loss: 0.41241
+Estimator: 005 | Epoch: 195 | Batch: 000 | Loss: 0.50023
+Estimator: 006 | Epoch: 195 | Batch: 000 | Loss: 0.40794
+Estimator: 000 | Epoch: 196 | Batch: 000 | Loss: 0.53172
+Estimator: 001 | Epoch: 196 | Batch: 000 | Loss: 0.40897
+Estimator: 002 | Epoch: 196 | Batch: 000 | Loss: 0.43224
+Estimator: 003 | Epoch: 196 | Batch: 000 | Loss: 0.48769
+Estimator: 004 | Epoch: 196 | Batch: 000 | Loss: 0.38087
+Estimator: 005 | Epoch: 196 | Batch: 000 | Loss: 0.43708
+Estimator: 006 | Epoch: 196 | Batch: 000 | Loss: 0.40999
+Estimator: 000 | Epoch: 197 | Batch: 000 | Loss: 0.48961
+Estimator: 001 | Epoch: 197 | Batch: 000 | Loss: 0.49185
+Estimator: 002 | Epoch: 197 | Batch: 000 | Loss: 0.33339
+Estimator: 003 | Epoch: 197 | Batch: 000 | Loss: 0.47679
+Estimator: 004 | Epoch: 197 | Batch: 000 | Loss: 0.46952
+Estimator: 005 | Epoch: 197 | Batch: 000 | Loss: 0.42224
+Estimator: 006 | Epoch: 197 | Batch: 000 | Loss: 0.42837
+Estimator: 000 | Epoch: 198 | Batch: 000 | Loss: 0.55773
+Estimator: 001 | Epoch: 198 | Batch: 000 | Loss: 0.42914
+Estimator: 002 | Epoch: 198 | Batch: 000 | Loss: 0.40661
+Estimator: 003 | Epoch: 198 | Batch: 000 | Loss: 0.50876
+Estimator: 004 | Epoch: 198 | Batch: 000 | Loss: 0.41247
+Estimator: 005 | Epoch: 198 | Batch: 000 | Loss: 0.49198
+Estimator: 006 | Epoch: 198 | Batch: 000 | Loss: 0.49278
+Estimator: 000 | Epoch: 199 | Batch: 000 | Loss: 0.49294
+Estimator: 001 | Epoch: 199 | Batch: 000 | Loss: 0.46984
+Estimator: 002 | Epoch: 199 | Batch: 000 | Loss: 0.46365
+Estimator: 003 | Epoch: 199 | Batch: 000 | Loss: 0.49048
+Estimator: 004 | Epoch: 199 | Batch: 000 | Loss: 0.36377
+Estimator: 005 | Epoch: 199 | Batch: 000 | Loss: 0.45557
+Estimator: 006 | Epoch: 199 | Batch: 000 | Loss: 0.54420
+[]
+allpro  torch.Size([182, 2])
+====================disease start ===================
+x:  [0.         0.         0.         0.02654867 0.02654867 0.05309735
+ 0.05309735 0.0619469  0.0619469  0.07079646 0.07079646 0.10619469
+ 0.10619469 0.12389381 0.12389381 0.16814159 0.16814159 0.18584071
+ 0.18584071 0.21238938 0.21238938 0.2300885  0.2300885  0.23893805
+ 0.23893805 0.24778761 0.24778761 0.27433628 0.27433628 0.28318584
+ 0.28318584 0.2920354  0.2920354  0.30973451 0.30973451 0.31858407
+ 0.31858407 0.37168142 0.37168142 0.39823009 0.39823009 0.45132743
+ 0.45132743 0.49557522 0.49557522 0.51327434 0.51327434 0.53097345
+ 0.53097345 0.5840708  0.5840708  0.61061947 0.61061947 0.61946903
+ 0.61946903 0.6460177  0.65486726 0.67256637 0.67256637 0.69026549
+ 0.69026549 0.72566372 0.72566372 0.73451327 0.73451327 0.75221239
+ 0.75221239 0.76106195 0.76106195 0.78761062 0.78761062 0.81415929
+ 0.81415929 0.88495575 0.88495575 0.92035398 0.92035398 0.92920354
+ 0.92920354 0.98230088 0.98230088 0.99115044 0.99115044 1.
+ 1.        ]
+y:  [0.         0.01449275 0.02898551 0.02898551 0.05797101 0.05797101
+ 0.07246377 0.07246377 0.08695652 0.08695652 0.11594203 0.11594203
+ 0.13043478 0.13043478 0.14492754 0.14492754 0.17391304 0.17391304
+ 0.20289855 0.20289855 0.2173913  0.2173913  0.24637681 0.24637681
+ 0.28985507 0.28985507 0.30434783 0.30434783 0.33333333 0.33333333
+ 0.34782609 0.34782609 0.39130435 0.39130435 0.4057971  0.4057971
+ 0.43478261 0.43478261 0.44927536 0.44927536 0.46376812 0.46376812
+ 0.49275362 0.49275362 0.50724638 0.50724638 0.52173913 0.52173913
+ 0.55072464 0.55072464 0.56521739 0.56521739 0.57971014 0.57971014
+ 0.5942029  0.5942029  0.60869565 0.60869565 0.62318841 0.62318841
+ 0.63768116 0.63768116 0.65217391 0.65217391 0.66666667 0.66666667
+ 0.68115942 0.68115942 0.69565217 0.69565217 0.71014493 0.71014493
+ 0.72463768 0.72463768 0.73913043 0.73913043 0.8115942  0.8115942
+ 0.85507246 0.85507246 0.89855072 0.89855072 0.91304348 0.91304348
+ 1.        ]
+disease: 0.47973579581890474
+0: , [0.4036725163459778, 0.4036456346511841, 0.40364328026771545, 0.40368548035621643, 0.40369361639022827, 0.4035830795764923, 0.40372398495674133, 0.40361300110816956, 0.4039275348186493, 0.40364089608192444, 0.4037586450576782, 0.4035925269126892, 0.40364474058151245, 0.40373069047927856, 0.40358832478523254, 0.40373313426971436, 0.40369608998298645, 0.40354642271995544, 0.40365731716156006, 0.4035726487636566, 0.4035851061344147, 0.4036255478858948, 0.4037896394729614, 0.40369004011154175, 0.40378227829933167, 0.4038356840610504, 0.4038914442062378, 0.4037162661552429, 0.403599351644516, 0.40364715456962585, 0.40363332629203796, 0.4035760462284088, 0.4037034809589386, 0.40362364053726196, 0.40359100699424744, 0.40379250049591064, 0.40375134348869324, 0.4038073420524597, 0.4036114513874054, 0.4035964608192444, 0.40371689200401306, 0.4036659896373749, 0.4036760628223419, 0.40376365184783936, 0.4036561846733093, 0.4036526381969452, 0.4036911427974701, 0.40374574065208435, 0.40367448329925537, 0.4037550091743469, 0.4036337435245514, 0.40378454327583313, 0.40376099944114685, 0.4037047028541565, 0.4036615490913391, 0.40354982018470764, 0.403696745634079, 0.4035603106021881, 0.4036625623703003, 0.4036072790622711, 0.40364107489585876, 0.4036732017993927, 0.40379294753074646, 0.4036327004432678, 0.4036630392074585, 0.4036995470523834, 0.40378424525260925, 0.40351417660713196, 0.40369173884391785, 0.4036028981208801, 0.4036826193332672, 0.40388253331184387, 0.4036669433116913, 0.4036429226398468, 0.40354448556900024, 0.4038183391094208, 0.40352505445480347, 0.4038131535053253, 0.40359365940093994, 0.40371185541152954, 0.4035737216472626, 0.4036509096622467, 0.40366917848587036, 0.40372470021247864, 0.4037063717842102, 0.4036872684955597, 0.4035535752773285, 0.403659850358963, 0.40368491411209106, 0.4036499857902527, 0.40357401967048645, 0.40373367071151733, 0.4036773443222046, 0.40362778306007385, 0.4037849009037018, 0.40381377935409546, 0.40366441011428833, 0.4038354754447937, 0.40382325649261475, 0.40354034304618835, 0.40378445386886597, 0.4037674069404602, 0.40364375710487366, 0.4035497009754181, 0.4038363993167877, 0.4037385880947113, 0.4036048948764801, 0.4036629796028137, 0.4036954343318939, 0.40361079573631287, 0.40361732244491577, 0.4037574827671051, 0.4036334753036499]
+1: , [0.4035772383213043, 0.40377119183540344, 0.4036497175693512, 0.40377867221832275, 0.4035715162754059, 0.4037207067012787, 0.40379253029823303, 0.4035324454307556, 0.403522789478302, 0.40364375710487366, 0.403663694858551, 0.40373918414115906, 0.4035705327987671, 0.40375009179115295, 0.40388214588165283, 0.4034506678581238, 0.4035568833351135, 0.40352895855903625, 0.40372434258461, 0.40376168489456177, 0.4035559594631195, 0.40368226170539856, 0.40350475907325745, 0.403814435005188, 0.4036667048931122, 0.40374448895454407, 0.40369561314582825, 0.4037269949913025, 0.403638631105423, 0.40375053882598877, 0.4037066698074341, 0.4035395085811615, 0.403788298368454, 0.40372803807258606, 0.40416306257247925, 0.40376147627830505, 0.4036782383918762, 0.4036075174808502, 0.40356573462486267, 0.40371793508529663, 0.4038253724575043, 0.4036422371864319, 0.4037388861179352, 0.40365010499954224, 0.4040659964084625, 0.4038148820400238, 0.4035109281539917, 0.40386852622032166, 0.4036308825016022, 0.4037373960018158, 0.4035683274269104, 0.4036273658275604, 0.4034394919872284, 0.403719961643219, 0.40362218022346497, 0.4034683406352997, 0.4036136567592621, 0.4037129282951355, 0.40366384387016296, 0.4036915898323059, 0.4035545885562897, 0.40381988883018494, 0.403496652841568, 0.4037550687789917, 0.40356817841529846, 0.4036017954349518, 0.40366965532302856, 0.40371137857437134, 0.4036569893360138]
+######################disease end #####################
+0: , [0.403672456741333, 0.4036456346511841, 0.40364325046539307, 0.40368545055389404, 0.4036934971809387, 0.4035830497741699, 0.40372389554977417, 0.4036129117012024, 0.40392744541168213, 0.4036408066749573, 0.40375858545303345, 0.40359246730804443, 0.4036446809768677, 0.4037306308746338, 0.40358829498291016, 0.4037330746650696, 0.40369606018066406, 0.40354639291763306, 0.4036571979522705, 0.40357261896133423, 0.4035850763320923, 0.40362548828125, 0.4037896394729614, 0.40369004011154175, 0.4037821888923645, 0.40383559465408325, 0.403891384601593, 0.40371620655059814, 0.4035993814468384, 0.40364712476730347, 0.4036332964897156, 0.4035760164260864, 0.4037034511566162, 0.4036235809326172, 0.4035909175872803, 0.40379250049591064, 0.4037513732910156, 0.40380728244781494, 0.403611421585083, 0.4035964608192444, 0.4037168025970459, 0.40366601943969727, 0.40367603302001953, 0.4037635922431946, 0.4036561846733093, 0.403652548789978, 0.4036911129951477, 0.40374571084976196, 0.4036743640899658, 0.40375494956970215, 0.403633713722229, 0.40378445386886597, 0.40376096963882446, 0.4037047028541565, 0.40366148948669434, 0.40354979038238525, 0.4036967158317566, 0.40356022119522095, 0.4036625027656555, 0.40360724925994873, 0.40364110469818115, 0.4036731719970703, 0.4037929177284241, 0.4036327004432678, 0.4036629796028137, 0.40369951725006104, 0.4037841558456421, 0.4035140872001648, 0.40369176864624023, 0.40360283851623535, 0.40368252992630005, 0.4038825035095215, 0.40366697311401367, 0.40364283323287964, 0.40354442596435547, 0.4038183093070984, 0.40352505445480347, 0.40381306409835815, 0.40359359979629517, 0.40371179580688477, 0.4035736918449402, 0.4036508798599243, 0.4036690592765808, 0.40372467041015625, 0.4037063717842102, 0.40368717908859253, 0.4035535454750061, 0.4036598205566406, 0.4036848545074463, 0.4036499857902527, 0.40357398986816406, 0.40373361110687256, 0.4036772847175598, 0.40362775325775146, 0.4037848711013794, 0.4038137197494507, 0.40366441011428833, 0.4038354754447937, 0.40382319688796997, 0.40354031324386597, 0.4037843346595764, 0.40376734733581543, 0.40364372730255127, 0.4035496711730957, 0.40383630990982056, 0.4037385582923889, 0.40360480546951294, 0.40366291999816895, 0.40369540452957153, 0.4036107659339905, 0.40361738204956055, 0.40375757217407227, 0.4036334156990051]
+1: , [0.40357720851898193, 0.4037711024284363, 0.40364962816238403, 0.40377867221832275, 0.4035714268684387, 0.4037206172943115, 0.40379250049591064, 0.40353238582611084, 0.4035227298736572, 0.40364378690719604, 0.403663694858551, 0.40373915433883667, 0.4035704731941223, 0.40375006198883057, 0.40388208627700806, 0.403450608253479, 0.4035568833351135, 0.4035288691520691, 0.4037242531776428, 0.403761625289917, 0.4035559296607971, 0.40368223190307617, 0.4035046696662903, 0.403814435005188, 0.40366673469543457, 0.4037443995475769, 0.40369558334350586, 0.40372705459594727, 0.4036386013031006, 0.40375053882598877, 0.40370655059814453, 0.4035394787788391, 0.4037882685661316, 0.40372800827026367, 0.4041630029678345, 0.4037613868713379, 0.40367817878723145, 0.40360748767852783, 0.4035657048225403, 0.4037178158760071, 0.4038253426551819, 0.4036421775817871, 0.403738796710968, 0.40365004539489746, 0.40406590700149536, 0.4038149118423462, 0.4035108685493469, 0.40386849641799927, 0.40363091230392456, 0.4037373661994934, 0.4035682678222656, 0.4036273956298828, 0.4034395217895508, 0.4037199020385742, 0.40362221002578735, 0.4034683108329773, 0.4036136269569397, 0.4037129282951355, 0.40366387367248535, 0.4036915898323059, 0.4035545587539673, 0.40381985902786255, 0.40349656343460083, 0.4037550091743469, 0.4035680890083313, 0.4036017656326294, 0.4036695957183838, 0.40371137857437134, 0.4036570191383362]
+x:  [0.         0.         0.         0.02654867 0.02654867 0.05309735
+ 0.05309735 0.0619469  0.0619469  0.07079646 0.07079646 0.10619469
+ 0.11504425 0.12389381 0.12389381 0.16814159 0.16814159 0.18584071
+ 0.18584071 0.21238938 0.21238938 0.2300885  0.2300885  0.23893805
+ 0.23893805 0.24778761 0.24778761 0.27433628 0.27433628 0.28318584
+ 0.28318584 0.2920354  0.2920354  0.30973451 0.30973451 0.31858407
+ 0.31858407 0.37168142 0.37168142 0.39823009 0.39823009 0.45132743
+ 0.45132743 0.49557522 0.49557522 0.51327434 0.51327434 0.53097345
+ 0.53097345 0.5840708  0.5840708  0.61061947 0.61061947 0.61946903
+ 0.61946903 0.6460177  0.6460177  0.67256637 0.67256637 0.69026549
+ 0.69026549 0.72566372 0.72566372 0.73451327 0.73451327 0.75221239
+ 0.75221239 0.76106195 0.76106195 0.78761062 0.78761062 0.81415929
+ 0.81415929 0.88495575 0.88495575 0.92035398 0.92035398 0.92920354
+ 0.92920354 0.98230088 0.98230088 0.99115044 0.99115044 1.
+ 1.        ]
+y:  [0.         0.01449275 0.02898551 0.02898551 0.05797101 0.05797101
+ 0.07246377 0.07246377 0.08695652 0.08695652 0.11594203 0.11594203
+ 0.13043478 0.13043478 0.14492754 0.14492754 0.17391304 0.17391304
+ 0.20289855 0.20289855 0.2173913  0.2173913  0.24637681 0.24637681
+ 0.28985507 0.28985507 0.30434783 0.30434783 0.33333333 0.33333333
+ 0.34782609 0.34782609 0.39130435 0.39130435 0.4057971  0.4057971
+ 0.43478261 0.43478261 0.44927536 0.44927536 0.46376812 0.46376812
+ 0.49275362 0.49275362 0.50724638 0.50724638 0.52173913 0.52173913
+ 0.55072464 0.55072464 0.56521739 0.56521739 0.57971014 0.57971014
+ 0.5942029  0.5942029  0.60869565 0.60869565 0.62318841 0.62318841
+ 0.63768116 0.63768116 0.65217391 0.65217391 0.66666667 0.66666667
+ 0.68115942 0.68115942 0.69565217 0.69565217 0.71014493 0.71014493
+ 0.72463768 0.72463768 0.73913043 0.73913043 0.8115942  0.8115942
+ 0.85507246 0.85507246 0.89855072 0.89855072 0.91304348 0.91304348
+ 1.        ]
+pan cancer: 0.4797357958189047
+0.47973579581890474
+0.4797357958189047
+[[1. 0.]
+ [1. 0.]]
+['healthy', 'disease']
